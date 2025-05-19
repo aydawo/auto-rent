@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link href="./src/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#D7D7D7]">
+    <!-- #region wraper -->
+    <div class="wraper box-border">
+      <div class="login hidden lg:block lg:h-[980px] lg:bg-[#D7D7D7]">
+        <div
+          class="login-panel lg:w-[1016px] lg:mt-[84px] lg:h-[856px] lg:flex lg:bg-[#FFFFFF] lg:rounded-tl-[8px] lg:rounded-bl-[8px] lg:mx-auto"
+        >
+          <div class="login-form lg:w-[660px] lg:h-[856px] lg:px-8">
+            <div class="lg:mt-[32px]">
+              <img
+                src="./src/image/Logo.png"
+                alt=""
+                class="mx-auto w-[151px] h-[59px] object-contain"
+              />
+            </div>
+
+            <h2
+              class="lg:text-[20px] lg:font-[estedad-bold] lg:text-[#494949] lg:mt-[235px] lg:text-center"
+            >
+              ورود یا ثبت نام
+            </h2>
+
+            <p
+              class="lg:text-[#494949] lg:mt-[30px] lg:font-[estedad-regular] lg:text-[14px] lg:text-center"
+            >
+              کد تایید به شماره موبایلی که وارد می‌کنید، ارسال خواهد شد.
+            </p>
+
+            <div
+              class="lg:flex lg:items-center lg:w-[520px] lg:h-[48px] lg:border lg:border-gray-300 lg:rounded-[8px] lg:mx-auto lg:mt-[16px]"
+            >
+              <input
+                type="tel"
+                placeholder="شماره موبایل"
+                class="lg:flex-1 lg:mr-[20px] lg:font-[estedad-regular] lg:outline-none lg:bg-transparent lg:text-right"
+                dir="ltr"
+              />
+
+              <span class="lg:text-gray-700 lg:font-[estedad-regular] lg:ml-2"
+                >۹۸+</span
+              >
+              <img
+                src="./src/image/Group.png"
+                alt="پرچم ایران"
+                class="lg:w-6 lg:h-6 lg:ml-2 lg:rounded-[50px]"
+              />
+            </div>
+
+            <div
+              class="lg:flex lg:items-center lg:w-full lg:mt-[32px] lg:mr-[40px] lg:font-[estedad-regular]"
+            >
+              <input type="checkbox" id="rules" class="lg:ml-2" />
+              <label
+                for="rules"
+                class="lg:text-sm lg:text-gray-700 lg:cursor-pointer"
+              >
+                با ورود و ثبت‌نام در سایت، با قوانین اتورنت موافقت می‌کنم.
+              </label>
+            </div>
+
+            <button
+              class="w-[556px] lg:mr-[40px] lg:bg-blue-600 lg:hover:bg-blue-700 lg:text-white lg:py-3 lg:mt-[14px] lg:font-[estedad-regular] rounded font-bold text-lg transition"
+            >
+              تایید و ادامه
+            </button>
+          </div>
+          <div class="login-img">
+            <img
+              class="lg:rounded-tl-[8px] lg:rounded-bl-[8px] lg:w-[356px] lg:h-[855px]"
+              src="./src/image/login/img.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="login lg:hidden min-h-screen bg-[#D7D7D7] flex items-center justify-center lg:h-[980px] lg:bg-[#D7D7D7]"
+      >
+        <div
+          class="login-panel w-full max-w-md h-auto flex flex-col bg-white rounded-none mx-0 shadow-lg lg:w-[1016px] lg:mt-[84px] lg:h-[856px] lg:flex-row lg:bg-[#FFFFFF] lg:rounded-tl-[8px] lg:rounded-bl-[8px] lg:mx-auto"
+        >
+          <div
+            class="login-form w-full h-auto px-4 py-8 flex flex-col justify-center lg:w-[660px] lg:h-[856px] lg:px-8"
+          >
+            <div class="mt-4 lg:mt-[32px]">
+              <a href="./index.html">
+                <img src="./src/image/Logo.png" alt=""
+              /></a>
+            </div>
+
+            <h2
+              class="text-[18px] font-bold text-[#494949] mt-10 text-center lg:text-[20px] lg:font-[estedad-bold] lg:mt-[235px]"
+            >
+              ورود یا ثبت نام
+            </h2>
+
+            <p
+              class="text-[#494949] mt-4 font-normal text-[13px] text-center lg:mt-[30px] lg:font-[estedad-regular] lg:text-[14px]"
+            >
+              کد تایید به شماره موبایلی که وارد می‌کنید، ارسال خواهد شد.
+            </p>
+
+            <div
+              class="flex items-center w-full h-12 mb-6 border border-gray-300 rounded-[8px] mx-auto mt-4 px-3 bg-white lg:flex lg:items-center lg:w-[520px] lg:h-[48px] lg:mx-auto lg:mt-[16px]"
+            >
+              <input
+                type="tel"
+                placeholder="شماره موبایل"
+                class="flex-1 mr-2 font-normal outline-none bg-transparent text-right text-[15px] lg:flex-1 lg:mr-[20px] lg:font-[estedad-regular]"
+                dir="ltr"
+              />
+
+              <span
+                class="text-gray-700 font-normal ml-2 lg:font-[estedad-regular]"
+                >۹۸+</span
+              >
+              <img
+                src="./src/image/Group.png"
+                alt="پرچم ایران"
+                class="w-6 h-6 ml-2 rounded-full lg:w-6 lg:h-6 lg:ml-2 lg:rounded-[50px]"
+              />
+            </div>
+
+            <div
+              class="flex items-center w-full mt-6 font-normal text-[13px] lg:flex lg:items-center lg:w-full lg:mt-[32px] lg:mr-[40px] lg:font-[estedad-regular]"
+            >
+              <input type="checkbox" id="rules" class="ml-2" />
+              <label
+                for="rules"
+                class="text-sm text-gray-700 cursor-pointer lg:text-sm lg:text-gray-700 lg:cursor-pointer"
+              >
+                با ورود و ثبت‌نام در سایت، با قوانین اتورنت موافقت می‌کنم.
+              </label>
+            </div>
+
+            <button
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 mt-6 rounded font-bold text-lg transition lg:w-[556px] lg:mr-[40px] lg:mt-[14px] lg:font-[estedad-regular]"
+            >
+              تایید و ادامه
+            </button>
+          </div>
+          <div class="login-img hidden lg:block">
+            <img
+              class="lg:rounded-tl-[8px] lg:rounded-bl-[8px] lg:w-[356px] lg:h-[855px]"
+              src="./src/image/login/img.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+  </body>
+</html>

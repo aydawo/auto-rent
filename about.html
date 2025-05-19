@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link href="./src/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#f3f3f3]">
+    <!-- #region Wraper -->
+    <div class="wraper box-border w-full h-full">
+      <!-- #region header -->
+      <div class="all-header lg:block hidden w-full lg:h-[683px]">
+        <div
+          class="slogan lg:w-full lg:relative lg:h-full lg:bg-no-repeat lg:bg-cover lg:bg-[url(/src/image/about/bg-about.jpg)]"
+        >
+          <div
+            class="slogan-menu lg:flex lg:justify-between lg:p-[32px] lg:items-center lg:w-[1224px] lg:h-[96px] lg:rounded-bl-[16px] lg:rounded-br-[16px] lg:bg-[#ffffff] lg:mx-auto"
+          >
+            <div class="slogan-menu-logo lg:w-[151px] lg:h-[59px]">
+              <a href="./index.html">
+                <img src="./src/image/Logo.png" alt=""
+              /></a>
+            </div>
+
+            <div class="slogan-menu-menu lg:w-[507px] lg:h-[28px]">
+              <div
+                class="nav lg:w-[full] lg:h-[28px] lg:flex lg:justify-between"
+              >
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px] lg:leading-none"
+                    href="#"
+                    >رزرو خودرو</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a class="lg:w-full lg:h-full lg:text-[15px]" href="#"
+                    >خدمات ما</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px]"
+                    href="./magazine.html"
+                    >بلاگ</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px]"
+                    href="./about.html"
+                    >درباره ما</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a class="lg:w-full lg:h-full lg:text-[15px]" href="#"
+                    >تماس با ما</a
+                  >
+                </div>
+                <div class="lg:nav-item-search-logo">
+                  <img src="./src/image/search.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="slogan-menu-register lg:flex lg:w-[122px] lg:h-[50px] lg:justify-center lg:items-center lg:rounded-[8px] lg:bg-[#194BF0]"
+            >
+              <a
+                href="#"
+                class="slogan-menu-register-text lg:font-[estedad-medium] lg:text-[#ffffff] lg:text-base lg:text-[14px]"
+              >
+                ورود/ثبت نام
+              </a>
+            </div>
+          </div>
+
+          <!-- slogan-center -->
+          <div
+            class="about-slogan-center-first hidden lg:mx-auto lg:mt-[350px] lg:flex lg:justify-center lg:items-center lg:w-[249px] lg:h-[45px]"
+          >
+            <h3 class="lg:text-[#FDB713] lg:font-[estedad-bold] lg:text-[32px]">
+              درباره ما
+            </h3>
+          </div>
+          <div
+            class="about-slogan-center-second hidden lg:mt-[10px] lg:mx-auto lg:w-[105px] lg:h-[25px] lg:flex lg:justify-center lg:items-center"
+          >
+            <p
+              class="lg:text-[#FFFFFF] lg:text-[13px] lg:font-[estedad-regular]"
+            >
+              اتورنت
+            </p>
+            <img src="./src/image/arrow-left-3.svg" alt="" />
+
+            <p
+              class="lg:text-[#FFFFFF] lg:text-[13px] lg:font-[estedad-regular]"
+            >
+              درباره ما
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Header -->
+      <div class="all-header w-full h-auto bg-white shadow-md lg:hidden">
+        <div
+          class="slogan relative h-auto bg-[url(/src/image/img-1.png)] bg-cover bg-center"
+        >
+          <div
+            class="slogan-menu flex justify-between items-center p-4 bg-white shadow-md"
+          >
+            <!-- Logo -->
+            <div class="slogan-menu-logo w-[120px] h-[40px]">
+              <a href="./index.html">
+                <img src="./src/image/Logo.png" alt=""
+              /></a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div>
+              <button id="menuButton" class="flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobileMenu"
+            class="hidden fixed top-0 right-0 w-64 h-full bg-white shadow-lg z-50"
+          >
+            <div class="p-4">
+              <button id="closeMenu" class="text-gray-800 text-xl font-bold">
+                ×
+              </button>
+              <nav class="mt-4 space-y-4">
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >رزرو خودرو</a
+                >
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >خدمات ما</a
+                >
+                <a
+                  href="./magazine.html"
+                  class="block text-gray-800 font-[estedad-medium]"
+                  >بلاگ</a
+                >
+                <a
+                  href="./about.html"
+                  class="block text-gray-800 font-[estedad-medium]"
+                  >درباره ما</a
+                >
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >تماس با ما</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="about-slogan-center-mobile w-full h-auto bg-[#FDB713] p-4 lg:hidden"
+      >
+        <!-- Title Section -->
+        <div class="text-center">
+          <h3 class="text-[#FFFFFF] font-[estedad-bold] text-[24px]">
+            درباره ما
+          </h3>
+        </div>
+
+        <!-- Breadcrumb Section -->
+        <div
+          class="flex justify-center items-center mt-4 space-x-2 rtl:space-x-reverse"
+        >
+          <p class="text-[#FFFFFF] text-[13px] font-[estedad-regular]">
+            اتورنت
+          </p>
+          <img src="./src/image/arrow-left-3.svg" alt="Arrow" class="w-4 h-4" />
+          <p class="text-[#FFFFFF] text-[13px] font-[estedad-regular]">
+            درباره ما
+          </p>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region interview -->
+      <div
+        class="interview lg:block hidden lg:mt-[56px] lg:mx-auto lg:w-[1220px] lg:p-[1px] lg:h-[208px] lg:bg-[#ffffff] lg:rounded-[16px]"
+      >
+        <div
+          class="interview-first-data lg:w-[1172px] lg:h-[48px] lg:mt-[24px] lg:mx-auto"
+        >
+          <h4
+            class="lg:text-[#353535] lg:text-[24px] lg:font-[estedad-semibold]"
+          >
+            معرفی اتورنت
+          </h4>
+        </div>
+        <div class="interview-sec-data-line lg:flex">
+          <div
+            class="line1 lg:w-[40px] lg:h-[3px] lg:bg-[#FDB713] lg:rounded-[8px] lg:mr-[24px] lg:mt-[4px]"
+          ></div>
+          <div
+            class="line2 lg:w-[1135px] lg:h-[1px] lg:bg-[#D7D7D7] lg:mt-[4px]"
+          ></div>
+        </div>
+        <div
+          class="interview-third-data lg:font-[estedad-regular] lg:text-[13px] lg:text-[#353535] lg:leading-6 lg:w-[1172px] lg:h-[100px] lg:mx-auto lg:mt-[12px] lg:"
+        >
+          <p>
+            اتورنت با رویکرد اعتماد به مشتری، در ابتدا با ایجاد بزرگترین ناوگان
+            خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در
+            سراسر کشور ایران و در تمامی شهرهای اصلی کشور و تمامی فرودگاه های
+            اصلی و با هدف ارتقاء واقعی خدمات خوب و خدماتی همانندکشورهای
+            پیــــشرفته در مــیهن عزیزمان ایران سرمایه‌گذاری نموده و این مهم با
+            جلب همکاری سایر شرکای تجاری و جذب سرمایه تا رسیدن به هدف ایجاد‌ شبکه
+            ای بالغ بر صد هزار خودرو و گسترش شبکه به کلیه شهرستانهای کوچک ایران
+            ادامه خواهد یافت.مدل تـجاری اتورنت ، با محوریت اعـتماد به مشتری،
+            امـکان اجاره خودرو با استانداردهای روز دنیا و بدون دریافت تضامین
+            سنتی همانند چک و سفته و اسناد ملکی را فراهم می سازد.
+          </p>
+        </div>
+      </div>
+      <div class="interview-mobile w-full h-auto bg-white p-4 lg:hidden">
+        <!-- Title Section -->
+        <div class="text-center">
+          <h4 class="text-[#353535] text-[18px] font-[estedad-semibold]">
+            معرفی اتورنت
+          </h4>
+        </div>
+
+        <!-- Divider Line -->
+        <div class="flex items-center mt-2">
+          <div class="w-[40px] h-[3px] bg-[#FDB713] rounded-[8px]"></div>
+          <div class="flex-grow h-[1px] bg-[#D7D7D7] ml-2"></div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="mt-4 text-justify">
+          <p
+            class="text-[#353535] text-[13px] font-[estedad-regular] leading-6"
+          >
+            اتورنت با رویکرد اعتماد به مشتری، در ابتدا با ایجاد بزرگترین ناوگان
+            خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا تجاری در
+            سراسر کشور ایران و در تمامی شهرهای اصلی کشور و تمامی فرودگاه‌های
+            اصلی و با هدف ارتقاء واقعی خدمات خوب و خدماتی همانند کشورهای پیشرفته
+            در میهن عزیزمان ایران سرمایه‌گذاری نموده و این مهم با جلب همکاری
+            سایر شرکای تجاری و جذب سرمایه تا رسیدن به هدف ایجاد شبکه‌ای بالغ بر
+            صد هزار خودرو و گسترش شبکه به کلیه شهرستان‌های کوچک ایران ادامه
+            خواهد یافت.
+          </p>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region option-->
+      <div
+        class="option lg:block hidden lg:w-[1222px] lg:h-[186px] lg:mx-auto lg:mt-[23px]"
+      >
+        <div class="why-rent-box lg:flex lg:justify-between">
+          <div
+            class="why-rent-box-1 lg:flex lg:justify-center lg:items-center lg:w-[392px] lg:h-[186px] lg:bg-[#FFFFFF] lg:rounded-[16px] lg:border-[1px] lg:border-[#D7D7D7]"
+          >
+            <div
+              class="why-rent-box-1-data lg:gap-2 lg:w-[264px] lg:h-[154px] lg:flex lg:justify-center lg:items-center lg:flex-col"
+            >
+              <div celass="why-rnt-box-1-data-first">
+                <img
+                  class="lg:w-[72px] lg:h-[72px]"
+                  src="./src/image/icone-1.svg"
+                  alt=""
+                />
+              </div>
+              <div class="why-rnt-box-1-data-second lg:w-[92px] lg:h-[22px]">
+                <h6
+                  class="lg:font-[estedad-regular] lg:text-[#414141] lg:text-[15px]"
+                >
+                  تحویل در محل
+                </h6>
+              </div>
+              <div class="why-rnt-box-1-data-third lg:w-[264px] lg:h-[44px]">
+                <p
+                  class="lg:font-[estedad-medium] lg:text-center lg:text-[#757575] lg:text-[11px]"
+                >
+                  تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-rent-box-2 lg:flex">
+            <div
+              class="why-rent-box-1 lg:flex lg:justify-center lg:items-center lg:w-[392px] lg:h-[186px] lg:bg-[#FFFFFF] lg:rounded-[16px] lg:border-[1px] lg:border-[#D7D7D7]"
+            >
+              <div
+                class="why-rent-box-1-data lg:gap-2 lg:w-[264px] lg:h-[154px] lg:flex lg:justify-center lg:items-center lg:flex-col"
+              >
+                <div celass="why-rnt-box-1-data-first">
+                  <img
+                    class="lg:w-[72px] lg:h-[72px]"
+                    src="./src/image/icone-2.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="why-rnt-box-1-data-second lg:w-[129px] lg:h-[22px]">
+                  <h6
+                    class="lg:font-[estedad-regular] lg:text-[#414141] lg:text-[14px]"
+                  >
+                    پشتیبانی ۲۴ ساعته
+                  </h6>
+                </div>
+                <div class="why-rnt-box-1-data-third lg:w-[264px] lg:h-[44px]">
+                  <p
+                    class="lg:font-[estedad-medium] lg:text-center lg:text-[#757575] lg:text-[11px]"
+                  >
+                    کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند
+                    بود.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="why-rent-box-3 lg:flex">
+            <div
+              class="why-rent-box-1 lg:flex lg:justify-center lg:items-center lg:w-[392px] lg:h-[186px] lg:bg-[#FFFFFF] lg:rounded-[16px] lg:border-[1px] lg:border-[#D7D7D7]"
+            >
+              <div
+                class="why-rent-box-1-data lg:gap-2 lg:w-[264px] lg:h-[154px] lg:flex lg:justify-center lg:items-center lg:flex-col"
+              >
+                <div celass="why-rnt-box-1-data-first">
+                  <img
+                    class="lg:w-[72px] lg:h-[72px]"
+                    src="./src/image/icone-3.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="why-rnt-box-1-data-second lg:w-[92px] lg:h-[22px]">
+                  <h6
+                    class="lg:font-[estedad-regular] lg:text-[#414141] lg:text-[15px]"
+                  >
+                    قیمت مناسب
+                  </h6>
+                </div>
+                <div class="why-rnt-box-1-data-third lg:w-[264px] lg:h-[44px]">
+                  <p
+                    class="lg:font-[estedad-medium] lg:text-center lg:text-[#757575] lg:text-[11px]"
+                  >
+                    هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="option-mobile w-full h-auto bg-white p-4 lg:hidden">
+        <!-- Option Items -->
+        <div class="grid grid-cols-1 gap-4">
+          <!-- Item 1 -->
+          <div
+            class="flex flex-col items-center text-center bg-[#FFFFFF] rounded-[16px] border border-[#D7D7D7] p-4"
+          >
+            <img
+              class="w-[48px] h-[48px] mb-2"
+              src="./src/image/icone-1.svg"
+              alt="Icon 1"
+            />
+            <h6 class="text-[#414141] text-[14px] font-[estedad-regular]">
+              تحویل در محل
+            </h6>
+            <p class="text-[#757575] text-[12px] font-[estedad-medium] mt-2">
+              تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="flex flex-col items-center text-center bg-[#FFFFFF] rounded-[16px] border border-[#D7D7D7] p-4"
+          >
+            <img
+              class="w-[48px] h-[48px] mb-2"
+              src="./src/image/icone-2.svg"
+              alt="Icon 2"
+            />
+            <h6 class="text-[#414141] text-[14px] font-[estedad-regular]">
+              پشتیبانی ۲۴ ساعته
+            </h6>
+            <p class="text-[#757575] text-[12px] font-[estedad-medium] mt-2">
+              کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div
+            class="flex flex-col items-center text-center bg-[#FFFFFF] rounded-[16px] border border-[#D7D7D7] p-4"
+          >
+            <img
+              class="w-[48px] h-[48px] mb-2"
+              src="./src/image/icone-3.svg"
+              alt="Icon 3"
+            />
+            <h6 class="text-[#414141] text-[14px] font-[estedad-regular]">
+              قیمت مناسب
+            </h6>
+            <p class="text-[#757575] text-[12px] font-[estedad-medium] mt-2">
+              هدف ما، ارائه بهترین خدمات با مناسب‌ترین قیمت ممکن است.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region another-option -->
+      <div
+        class="another-option lg:block hidden lg:w-[1220px] lg:h-[591px] lg:mx-auto lg:mt-[22px]"
+      >
+        <div
+          class="another-option-center lg:w-[1220px] lg:h-[529px] lg:bg-cover lg:bg-no-repeat lg:bg-[url(/src/image/about/bg-about-2.png)] lg:rounded-2xl lg:relative overflow-hidden"
+        >
+          <div class="lg:absolute lg:inset-0 lg:bg-black/40">
+            <div
+              class="lg:mx-auto lg:w-[1172px] lg:h-[45px] lg:flex lg:justify-center lg:mt-[279px] lg:items-center"
+            >
+              <h3
+                class="lg:font-[estedad-bold] lg:text-[32px] lg:text-[#FFFFFF]"
+              >
+                شبکه امدادی و تعمیرات خودرو
+              </h3>
+            </div>
+            <div class="lg:w-[937px] lg:h-[75px] lg:mt-[16px] lg:mx-auto">
+              <p
+                class="lg:font-[estedad-regular] lg:text-center lg:text-[14px] lg:leading-7 lg:text-[#FFFFFF]"
+              >
+                شبکه تحت پوشش اتورنت که با سرمایه‌گذاری و همکاری شرکای تجاری در
+                خدمت مشتریان قرار گرفته است شامل 2000 نقطه در سراسر کشور ایــران
+                و مناطق آزاد تجاری مـی‌باشد که باعث شده سرعت امداد رسانی در هر
+                نقطه ایران به کمتر از 30 دقیقه کاهش یابد، امدادگران و خودروهای
+                امدادی همگی مجهز به تجهیزات جهت رفع معایب و تعمیرات ساده بوده و
+                بسیاری از مشکلات در همین مرحله به سادگی رفع می گردند.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="another-option-bottom lg:w-[1012px] lg:flex lg:justify-between lg:items-center lg:h-[142px] lg:absolute lg:top-[1630px] lg:left-[290px]"
+        >
+          <div
+            class="another-option-box lg:w-[494px] lg:h-[142px] lg:bg-[#ffffff] lg:rounded-[16px]"
+          >
+            <h3
+              class="lg:w-[126px] lg:h-[28px] lg:border-b-[2px] lg:border-b-[#FDB713] lg:text-[#0C0C0C] lg:font-[estedad-bold] lg:mx-auto lg:text-[15px] lg:mt-[16px]"
+            >
+              خدمات شبانه روزی
+            </h3>
+            <p
+              class="lg:font-[estedad-regular] lg:text-[13px] lg:w-[446px] lg:h-[84px] lg:mt-[10px] lg:text-[#0C0C0C] lg:mx-auto"
+            >
+              اتورنت در تــمامی بخش‌های اصـلی از جـمله مرکز تماس مشتریان و خدمات
+              امدادی بصورت دائمی تمامی روزهای هفته و 24 ساعته فعال است، بیشتر
+              ایستگاه های کاری تحویل خودرو نیز بصورت 24 ساعته می‌باشند ، فقط
+              واحد اداری و فروش اجاره های بلند مدت در ساعات اداری و روزهای اداری
+              فعال می باشند.
+            </p>
+          </div>
+          <div
+            class="another-option-box lg:w-[494px] lg:h-[142px] lg:bg-[#ffffff] lg:rounded-[16px]"
+          >
+            <h3
+              class="lg:w-[126px] lg:h-[28px] lg:border-b-[2px] lg:border-b-[#FDB713] lg:text-[#0C0C0C] lg:font-[estedad-bold] lg:mx-auto lg:text-[15px] lg:mt-[16px]"
+            >
+              ارائه خودرو جایگزین
+            </h3>
+            <p
+              class="lg:font-[estedad-regular] lg:text-[14px] lg:w-[446px] lg:h-[84px] lg:mt-[10px] lg:text-[#0C0C0C] lg:mx-auto"
+            >
+              با توجه به تعداد خودرو های موجود در اتورنت امکان ارائه خودروی
+              جایگزین در خرابی ها و تعمیرات طولانی مدت که بصورت امدادی برطرف
+              نگردند ، در هر نقطه از ایران میسر می باشد.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="another-option-mobile w-full h-auto bg-[#FDB713] p-4 lg:hidden"
+      >
+        <!-- Title Section -->
+        <div class="text-center">
+          <h3 class="text-[#FFFFFF] font-[estedad-bold] text-[20px]">
+            شبکه امدادی و تعمیرات خودرو
+          </h3>
+        </div>
+
+        <!-- Description Section -->
+        <div class="mt-4 text-justify">
+          <p
+            class="text-[#FFFFFF] text-[13px] font-[estedad-regular] leading-6"
+          >
+            شبکه تحت پوشش اتورنت که با سرمایه‌گذاری و همکاری شرکای تجاری در خدمت
+            مشتریان قرار گرفته است شامل 2000 نقطه در سراسر کشور ایران و مناطق
+            آزاد تجاری می‌باشد که باعث شده سرعت امداد رسانی در هر نقطه ایران به
+            کمتر از 30 دقیقه کاهش یابد. امدادگران و خودروهای امدادی همگی مجهز به
+            تجهیزات جهت رفع معایب و تعمیرات ساده بوده و بسیاری از مشکلات در همین
+            مرحله به سادگی رفع می‌گردند.
+          </p>
+        </div>
+
+        <!-- Features Section -->
+        <div class="mt-6 grid grid-cols-1 gap-4">
+          <!-- Feature 1 -->
+          <div class="bg-white rounded-[16px] p-4 text-center">
+            <h4
+              class="text-[#0C0C0C] font-[estedad-bold] text-[14px] border-b-2 border-[#FDB713] pb-2"
+            >
+              خدمات شبانه روزی
+            </h4>
+            <p class="text-[#757575] text-[12px] font-[estedad-regular] mt-2">
+              اتورنت در تمامی بخش‌های اصلی از جمله مرکز تماس مشتریان و خدمات
+              امدادی بصورت دائمی تمامی روزهای هفته و 24 ساعته فعال است.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="bg-white rounded-[16px] p-4 text-center">
+            <h4
+              class="text-[#0C0C0C] font-[estedad-bold] text-[14px] border-b-2 border-[#FDB713] pb-2"
+            >
+              ارائه خودرو جایگزین
+            </h4>
+            <p class="text-[#757575] text-[12px] font-[estedad-regular] mt-2">
+              امکان ارائه خودروی جایگزین در خرابی‌ها و تعمیرات طولانی مدت که
+              بصورت امدادی برطرف نگردند، در هر نقطه از ایران میسر می‌باشد.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region footer -->
+      <div
+        class="footer lg:mb-[64px] lg:block hidden lg:w-[1224px] lg:h-[432px] lg:bg-[#343434] lg:mt-[80px] lg:pt-[1px] lg:mx-auto lg:rounded-[16px]"
+      >
+        <div
+          class="footer-first lg:flex lg:w-[1120px] lg:h-[101px] lg:border-[1px] lg:border-[#868686] lg:rounded-[16px] lg:mx-auto lg:mt-[41px]"
+        >
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[16px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/telephone.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                ارتباط با ما
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                ۰۹۱۲-۲۱۳۲۶۵۴۵
+              </p>
+            </div>
+          </div>
+          <div
+            class="footer-line lg:h-[32px] lg:w-[1px] lg:bg-[#868686] lg:mt-[34.5px] lg:mr-[81px]"
+          ></div>
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[81px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/email.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                ایمیل
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                autorent@info.com
+              </p>
+            </div>
+          </div>
+          <div
+            class="footer-line lg:h-[32px] lg:w-[1px] lg:bg-[#868686] lg:mt-[34.5px] lg:mr-[81px]"
+          ></div>
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[81px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/map.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                آدرس
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                تهران- خ شادمان
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-second lg:w-[1176px] lg:h-[233px] lg:mt-[16px]s lg:mx-auto"
+        >
+          <div
+            class="footer-second-top lg:mx-auto lg:w-[1115px] lg:h-[168px] lg:flex"
+          >
+            <div
+              class="footer-seconde-top-right lg:w-[572px] lg:h-[168px] lg:mr-[67px] lg:flex"
+            >
+              <div
+                class="footer-seconde-top-right-text lg:w-[407px] lg:h-[168px]"
+              >
+                <img
+                  class="mt-[10px]"
+                  src="./src/image/footer-logo.svg"
+                  alt=""
+                />
+
+                <p
+                  class="lg:mt-[24px] lg:text-[13px] lg:font-[estedad-regular] lg:leading-8 lg:text-[#FFFFFF]"
+                >
+                  اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
+                  ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
+                  تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+                </p>
+              </div>
+              <div
+                class="footer-seconde-top-right-menu lg:flex lg:flex-col lg:mt-[20px] lg:mr-[32px]"
+              >
+                <p
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF]"
+                >
+                  دسترسی آسان
+                </p>
+                <a
+                  href="./FAQ.html"
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  سوالات متداول</a
+                >
+                <a
+                  href="./contact-us.html "
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  تماس با ما</a
+                >
+
+                <a
+                  href="./about.html"
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  درباره ما</a
+                >
+              </div>
+            </div>
+            <div
+              class="footer-second-top-left lg:w-[320px] lg:h-[80px] lg:mt-[44px] lg:mr-[56px]"
+            >
+              <p
+                class="lg:text-[16px] lg:font-[estedad-semibold] lg:text-[#FFFFFF]"
+              >
+                خبرنامه
+              </p>
+              <div
+                class="email-inpute lg:w-[320px] lg:h-[40px] lg:border-[1px] lg:flex lg:items-center lg:border-[#AEAEAE] lg:rounded-[9px] lg:mt-[12px]"
+              >
+                <p
+                  class="lg:font-[estedad-regular] lg:mr-[5px] lg:text-[12px] lg:text-[#AEAEAE]"
+                >
+                  ایمیل خود را وارد کنید
+                </p>
+                <div
+                  class="send lg:w-[85px] lg:h-[35px] lg:bg-[#FCB910] lg:mr-[120px] lg:rounded-[8px] lg:flex lg:justify-center lg:items-center"
+                >
+                  <p class="lg:font-[estedad-semibold]">ارسال</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer-second-bottom lg:w-[1176px] lg:h-[49px] lg:mt-[50px]"
+          >
+            <div
+              class="b-line lg:w-[1120px] lg:h-[1px] lg:mx-auto bg-[#868686]"
+            ></div>
+            <p
+              class="lg:text-[#9A9A9A] lg:font-[estedad-regular] lg:text-[14px] lg:mt-[24px] lg:mr-[463px]"
+            >
+              تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-mobile bg-[#343434] mt-[20px] text-white px-4 py-6 lg:hidden"
+      >
+        <!-- Contact Section -->
+        <div class="contact-section grid grid-cols-1 gap-4">
+          <!-- Phone -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/telephone.svg"
+              alt="Phone"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">
+                ارتباط با ما
+              </p>
+              <p class="text-[13px] font-[estedad-regular] mr-[10px] mt-1">
+                ۰۹۱۲-۲۱۳۲۶۵۴۵
+              </p>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/email.svg"
+              alt="Email"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">ایمیل</p>
+              <p class="text-[13px] font-[estedad-regular] mr-[10px] mt-1">
+                autorent@info.com
+              </p>
+            </div>
+          </div>
+          <!-- Address -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/map.svg"
+              alt="Address"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">آدرس</p>
+              <p class="text-[13px] font-[estedad-regular] mt-1 mr-[10px]">
+                تهران- خ شادمان
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section mt-6">
+          <p class="text-[14px] font-[estedad-semibold]">خبرنامه</p>
+          <div
+            class="flex items-center mt-2 border border-[#AEAEAE] rounded-[8px]"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل خود را وارد کنید"
+              class="flex-grow px-3 py-2 text-[12px] font-[estedad-regular] bg-transparent text-[#AEAEAE] focus:outline-none"
+            />
+            <button
+              class="bg-[#FCB910] text-black px-4 py-2 rounded-[8px] text-[12px] font-[estedad-semibold]"
+            >
+              ارسال
+            </button>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-6 border-t border-[#868686] pt-4">
+          <p
+            class="text-[12px] font-[estedad-regular] text-center text-[#9A9A9A]"
+          >
+            تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+          </p>
+        </div>
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+  </body>
+</html>
+<script>
+  const menuButton = document.getElementById("menuButton");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenu = document.getElementById("closeMenu");
+
+  menuButton.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+</script>

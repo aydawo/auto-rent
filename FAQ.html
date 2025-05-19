@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/css/output.css" rel="stylesheet" />
+    <title>FAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-[#f3f3f3]">
+    <!-- #region wraper -->
+    <div class="warpar box-border w-full h-full">
+      <!-- #region header-->
+      <div class="all-header lg:block hidden w-full lg:h-[683px]">
+        <div
+          class="slogan lg:w-full lg:relative lg:h-full lg:bg-no-repeat lg:bg-cover lg:bg-[url(/src/image/about/bg-about.jpg)]"
+        >
+          <div
+            class="slogan-menu lg:flex lg:justify-between lg:p-[32px] lg:items-center lg:w-[1224px] lg:h-[96px] lg:rounded-bl-[16px] lg:rounded-br-[16px] lg:bg-[#ffffff] lg:mx-auto"
+          >
+            <div class="slogan-menu-logo lg:w-[151px] lg:h-[59px]">
+              <a href="./index.html">
+                <img src="./src/image/Logo.png" alt=""
+              /></a>
+            </div>
+
+            <div class="slogan-menu-menu lg:w-[507px] lg:h-[28px]">
+              <div
+                class="nav lg:w-[full] lg:h-[28px] lg:flex lg:justify-between"
+              >
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px] lg:leading-none"
+                    href="#"
+                    >رزرو خودرو</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a class="lg:w-full lg:h-full lg:text-[15px]" href="#"
+                    >خدمات ما</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px]"
+                    href="./magazine.html"
+                    >بلاگ</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px]"
+                    href="./about.html"
+                    >درباره ما</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a class="lg:w-full lg:h-full lg:text-[15px]" href="#"
+                    >تماس با ما</a
+                  >
+                </div>
+                <div class="lg:nav-item-search-logo">
+                  <img src="./src/image/search.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="slogan-menu-register lg:flex lg:w-[122px] lg:h-[50px] lg:justify-center lg:items-center lg:rounded-[8px] lg:bg-[#194BF0]"
+            >
+              <a
+                href="#"
+                class="slogan-menu-register-text lg:font-[estedad-medium] lg:text-[#ffffff] lg:text-base lg:text-[14px]"
+              >
+                ورود/ثبت نام
+              </a>
+            </div>
+          </div>
+
+          <!-- slogan-center -->
+          <div
+            class="about-slogan-center-first hidden lg:mx-auto lg:mt-[350px] lg:flex lg:justify-center lg:items-center lg:w-[249px] lg:h-[45px]"
+          >
+            <h3 class="lg:text-[#FDB713] lg:font-[estedad-bold] lg:text-[32px]">
+              سوالات شما
+            </h3>
+          </div>
+          <div
+            class="about-slogan-center-second hidden lg:mt-[10px] lg:mx-auto lg:w-[160px] lg:h-[25px] lg:flex lg:justify-center lg:items-center"
+          >
+            <p
+              class="lg:text-[#FFFFFF] lg:text-[13px] lg:font-[estedad-regular]"
+            >
+              اتورنت
+            </p>
+            <img src="./src/image/arrow-left-3.svg" alt="" />
+
+            <p
+              class="lg:text-[#FFFFFF] lg:text-[13px] lg:font-[estedad-regular]"
+            >
+              سوالات متداول
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Header -->
+      <div class="all-header w-full h-auto bg-white shadow-md lg:hidden">
+        <div
+          class="slogan relative h-auto bg-[url(/src/image/img-1.png)] bg-cover bg-center"
+        >
+          <div
+            class="slogan-menu flex justify-between items-center p-4 bg-white shadow-md"
+          >
+            <!-- Logo -->
+            <div class="slogan-menu-logo w-[120px] h-[40px]">
+              <a href="./index.html">
+                <img src="./src/image/Logo.png" alt=""
+              /></a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div>
+              <button id="menuButton" class="flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobileMenu"
+            class="hidden fixed top-0 right-0 w-64 h-full bg-white shadow-lg z-50"
+          >
+            <div class="p-4">
+              <button id="closeMenu" class="text-gray-800 text-xl font-bold">
+                ×
+              </button>
+              <nav class="mt-4 space-y-4">
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >رزرو خودرو</a
+                >
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >خدمات ما</a
+                >
+                <a
+                  href="./magazine.html"
+                  class="block text-gray-800 font-[estedad-medium]"
+                  >بلاگ</a
+                >
+                <a
+                  href="./about.html"
+                  class="block text-gray-800 font-[estedad-medium]"
+                  >درباره ما</a
+                >
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >تماس با ما</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="about-slogan-center-mobile w-full h-auto bg-[#FDB713] p-4 lg:hidden"
+      >
+        <!-- Title Section -->
+        <div class="text-center">
+          <h3 class="text-[#FFFFFF] font-[estedad-bold] text-[24px]">
+            سوالات شما
+          </h3>
+        </div>
+
+        <div
+          class="flex justify-center items-center mt-4 space-x-2 rtl:space-x-reverse"
+        >
+          <p class="text-[#FFFFFF] text-[13px] font-[estedad-regular]">
+            اتورنت
+          </p>
+          <img src="./src/image/arrow-left-3.svg" alt="Arrow" class="w-4 h-4" />
+          <p class="text-[#FFFFFF] text-[13px] font-[estedad-regular]">
+            سوالات متداول
+          </p>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region  faq-->
+      <div class="FAQ hidden lg:block lg:mt-[56px]">
+        <div
+          class="FAQ-data lg:flex lg:justify-between lg:items-center lg:mt-[24px] lg:w-[1224px] lg:h-[459px] lg:mx-auto"
+        >
+          <div class="FAQ-data-right lg:w-[808px] lg:h-[459px]">
+            <div
+              class="FAQ-data-right-1 lg:flex lg:items-center lg:w-[808px] lg:h-[76px] lg:border-[1px] lg:border-[#D7D7D7] lg:rounded-[16px] lg:bg-[#FFFFFF]"
+            >
+              <img
+                class="lg:w-[24px] mr-[16px] lg:h-[24px]"
+                src="./src/image/add-square.svg"
+                alt=""
+              />
+              <p
+                class="lg:text-[#353535] lg:font-[estedad-medium] lg:text-[16px] lg:mr-[8px]"
+              >
+                در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟
+              </p>
+            </div>
+            <div
+              class="FAQ-data-right-2 lg:w-[808px] lg:h-[183px] lg:mt-[16px] lg:border-[1px] lg:border-[#D7D7D7] lg:rounded-[16px] lg:bg-[#FFFFFF]"
+            >
+              <div
+                class="FAQ-data-right-2-text lg:flex lg:items-center lg:mt-[16px]"
+              >
+                <img
+                  class="lg:w-[24px] mr-[16px] lg:h-[24px]"
+                  src="./src/image/minus-square.svg"
+                  alt=""
+                />
+
+                <p
+                  class="lg:text-[#353535] lg:font-[estedad-medium] lg:text-[16px] lg:mr-[8px]"
+                >
+                  هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟
+                </p>
+              </div>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#727272] lg:text-[14px] lg:w-[776px] lg:h-[107px] lg:mt-[16px] lg:mr-[16px]"
+              >
+                در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک
+                بنزین پر تحویل مشتریان عزیز می گردد. در زمان استرداد خودرو در
+                صورتی که خودرو به کارواش نیاز داشته و یا خودرو دارای کسر سوخت
+                باشد هزینه آن بر عهده مشتری می باشد.
+              </p>
+            </div>
+            <div
+              class="FAQ-data-right-3 lg:flex lg:items-center lg:w-[808px] lg:mt-[16px] lg:h-[76px] lg:border-[1px] lg:border-[#D7D7D7] lg:rounded-[16px] lg:bg-[#FFFFFF]"
+            >
+              <img
+                class="lg:w-[24px] mr-[16px] lg:h-[24px]"
+                src="./src/image/add-square.svg"
+                alt=""
+              />
+              <p
+                class="lg:text-[#353535] lg:font-[estedad-medium] lg:text-[16px] lg:mr-[8px]"
+              >
+                آیا ماشین های اتورنت دارای بیمه هستند؟
+              </p>
+            </div>
+            <div
+              class="FAQ-data-right-4 lg:flex lg:items-center lg:w-[808px] lg:mt-[16px] lg:h-[76px] lg:border-[1px] lg:border-[#D7D7D7] lg:rounded-[16px] lg:bg-[#FFFFFF]"
+            >
+              <img
+                class="lg:w-[24px] mr-[16px] lg:h-[24px]"
+                src="./src/image/add-square.svg"
+                alt=""
+              />
+              <p
+                class="lg:text-[#353535] lg:font-[estedad-medium] lg:text-[16px] lg:mr-[8px]"
+              >
+                محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
+              </p>
+            </div>
+          </div>
+          <div
+            class="FAQ-data-left lg:w-[392px] lg:mb-[108px] lg:h-[351px] lg:rounded-[16px]"
+          >
+            <img src="./src/image/faq.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="FAQ-mobile block lg:hidden w-full px-4 py-6">
+        <h4
+          class="text-[#494949] text-[20px] font-[estedad-bold] mb-4 text-center"
+        >
+          سوالات متداول
+        </h4>
+        <div class="space-y-3">
+          <!-- سوال 1 -->
+          <div class="bg-white rounded-[12px] shadow p-4">
+            <div class="flex items-center mb-2">
+              <img
+                src="./src/image/add-square.svg"
+                alt=""
+                class="w-6 h-6 ml-2"
+              />
+              <span class="text-[#353535] font-[estedad-medium] text-[15px]"
+                >در صورت بروز نقص فنی برای خودرو چه اتفاقی می‌افتد؟</span
+              >
+            </div>
+          </div>
+          <!-- سوال 2 (باز شده) -->
+          <div class="bg-white rounded-[12px] shadow p-4">
+            <div class="flex items-center mb-2">
+              <img
+                src="./src/image/minus-square.svg"
+                alt=""
+                class="w-6 h-6 ml-2"
+              />
+              <span class="text-[#353535] font-[estedad-medium] text-[15px]"
+                >هزینه بنزین و کارواش در خودروهای اجاره‌ای به عهده کیست؟</span
+              >
+            </div>
+            <p class="text-[#727272] text-[14px] font-[estedad-regular] mt-2">
+              در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک بنزین
+              پر تحویل مشتریان عزیز می‌گردد. در زمان استرداد خودرو در صورتی که
+              خودرو به کارواش نیاز داشته و یا خودرو دارای کسر سوخت باشد هزینه آن
+              بر عهده مشتری می‌باشد.
+            </p>
+          </div>
+          <!-- سوال 3 -->
+          <div class="bg-white rounded-[12px] shadow p-4">
+            <div class="flex items-center mb-2">
+              <img
+                src="./src/image/add-square.svg"
+                alt=""
+                class="w-6 h-6 ml-2"
+              />
+              <span class="text-[#353535] font-[estedad-medium] text-[15px]"
+                >آیا ماشین‌های اتورنت دارای بیمه هستند؟</span
+              >
+            </div>
+          </div>
+          <!-- سوال 4 -->
+          <div class="bg-white rounded-[12px] shadow p-4">
+            <div class="flex items-center mb-2">
+              <img
+                src="./src/image/add-square.svg"
+                alt=""
+                class="w-6 h-6 ml-2"
+              />
+              <span class="text-[#353535] font-[estedad-medium] text-[15px]"
+                >محدودیت کیلومتر در اجاره خودرو چقدر می‌باشد؟</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ...existing code... -->
+      <!-- #endregion -->
+      <!-- #region brands-->
+      <div
+        class="mobile-brands lg:hidden opacity-[35%] mt-[10px] grid grid-cols-5 gap-4 px-4 py-6"
+      >
+        <div class="flex justify-center items-center">
+          <img
+            class="w-[60px] h-[30px]"
+            src="./src/image/landrover.png"
+            alt="Land Rover"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            class="w-[60px] h-[30px]"
+            src="./src/image/geep.png"
+            alt="Jeep"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <img class="w-[60px] h-[30px]" src="./src/image/KIA.png" alt="KIA" />
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            class="w-[60px] h-[30px]"
+            src="./src/image/Toyota.png"
+            alt="Toyota"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            class="w-[60px] h-[30px]"
+            src="./src/image/Nissan.png"
+            alt="Nissan"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            class="w-[60px] h-[30px]"
+            src="./src/image/Hyundai.png"
+            alt="Hyundai"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            class="w-[60px] h-[30px]"
+            src="./src/image/Honda.png"
+            alt="Honda"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            class="w-[60px] h-[30px]"
+            src="./src/image/Marcedes.png"
+            alt="Mercedes"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <img
+            class="w-[60px] h-[30px]"
+            src="./src/image/lexus-logo.png"
+            alt="Lexus"
+          />
+        </div>
+        <div class="flex justify-center items-center">
+          <img class="w-[60px] h-[30px]" src="./src/image/BMW.png" alt="BMW" />
+        </div>
+      </div>
+      <div
+        class="brands hidden lg:block lg:w-[1440px] lg:h-[80px] lg:opacity-[35%] lg:mx-auto lg:mt-[147px]"
+      >
+        <div class="lg:swiper lg:w-full lg:h-fit">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide hidden lg:justify-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:w-[100px] hidden lg:block lg:opacity-100 lg:h-[50px]"
+                  src="./src/image/landrover.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-slide lg:justify-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:block lg:w-[99px] lg:h-[49px]"
+                  src="./src/image/geep.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-slide lg:justify-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:block lg:w-[100px] lg:h-[50px]"
+                  src="./src/image/KIA.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-slide lg:justify-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:block lg:w-[87px] lg:h-[60px]"
+                  src="./src/image/Toyota.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-slide lg:justify-center lg:content-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:block lg:h-[60px] lg:w-[70px]"
+                  src="./src/image/Nissan.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-slide lg:justify-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:block lg:w-[110px] lg:h-[60px]"
+                  src="./src/image/Hyundai.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-slide lg:justify-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:block lg:w-[74px] lg:h-[60px]"
+                  src="./src/image/Honda.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-slide lg:justify-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:block lg:w-[80px] lg:h-[80px]"
+                  src="./src/image/Marcedes.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-slide lg:justify-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:block lg:w-[94px] lg:h-[70px]"
+                  src="./src/image/lexus-logo.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="swiper-slide lg:justify-center lg:bg-[#fff] lg:flex lg:items-center"
+              >
+                <img
+                  class="lg:block lg:w-[80px] lg:h-[80px]"
+                  src="./src/image/BMW.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region footer -->
+      <div
+        class="footer lg:mb-[64px] lg:block hidden lg:w-[1224px] lg:h-[432px] lg:bg-[#343434] lg:mt-[80px] lg:pt-[1px] lg:mx-auto lg:rounded-[16px]"
+      >
+        <div
+          class="footer-first lg:flex lg:w-[1120px] lg:h-[101px] lg:border-[1px] lg:border-[#868686] lg:rounded-[16px] lg:mx-auto lg:mt-[41px]"
+        >
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[16px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/telephone.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                ارتباط با ما
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                ۰۹۱۲-۲۱۳۲۶۵۴۵
+              </p>
+            </div>
+          </div>
+          <div
+            class="footer-line lg:h-[32px] lg:w-[1px] lg:bg-[#868686] lg:mt-[34.5px] lg:mr-[81px]"
+          ></div>
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[81px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/email.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                ایمیل
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                autorent@info.com
+              </p>
+            </div>
+          </div>
+          <div
+            class="footer-line lg:h-[32px] lg:w-[1px] lg:bg-[#868686] lg:mt-[34.5px] lg:mr-[81px]"
+          ></div>
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[81px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/map.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                آدرس
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                تهران- خ شادمان
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-second lg:w-[1176px] lg:h-[233px] lg:mt-[16px]s lg:mx-auto"
+        >
+          <div
+            class="footer-second-top lg:mx-auto lg:w-[1115px] lg:h-[168px] lg:flex"
+          >
+            <div
+              class="footer-seconde-top-right lg:w-[572px] lg:h-[168px] lg:mr-[67px] lg:flex"
+            >
+              <div
+                class="footer-seconde-top-right-text lg:w-[407px] lg:h-[168px]"
+              >
+                <img
+                  class="mt-[10px]"
+                  src="./src/image/footer-logo.svg"
+                  alt=""
+                />
+
+                <p
+                  class="lg:mt-[24px] lg:text-[13px] lg:font-[estedad-regular] lg:leading-8 lg:text-[#FFFFFF]"
+                >
+                  اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
+                  ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
+                  تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+                </p>
+              </div>
+              <div
+                class="footer-seconde-top-right-menu lg:flex lg:flex-col lg:mt-[20px] lg:mr-[32px]"
+              >
+                <p
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF]"
+                >
+                  دسترسی آسان
+                </p>
+                <a
+                  href="./FAQ.html"
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  سوالات متداول</a
+                >
+                <a
+                  href="./contact-us.html "
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  تماس با ما</a
+                >
+
+                <a
+                  href="./about.html"
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  درباره ما</a
+                >
+              </div>
+            </div>
+            <div
+              class="footer-second-top-left lg:w-[320px] lg:h-[80px] lg:mt-[44px] lg:mr-[56px]"
+            >
+              <p
+                class="lg:text-[16px] lg:font-[estedad-semibold] lg:text-[#FFFFFF]"
+              >
+                خبرنامه
+              </p>
+              <div
+                class="email-inpute lg:w-[320px] lg:h-[40px] lg:border-[1px] lg:flex lg:items-center lg:border-[#AEAEAE] lg:rounded-[9px] lg:mt-[12px]"
+              >
+                <p
+                  class="lg:font-[estedad-regular] lg:mr-[5px] lg:text-[12px] lg:text-[#AEAEAE]"
+                >
+                  ایمیل خود را وارد کنید
+                </p>
+                <div
+                  class="send lg:w-[85px] lg:h-[35px] lg:bg-[#FCB910] lg:mr-[120px] lg:rounded-[8px] lg:flex lg:justify-center lg:items-center"
+                >
+                  <p class="lg:font-[estedad-semibold]">ارسال</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer-second-bottom lg:w-[1176px] lg:h-[49px] lg:mt-[50px]"
+          >
+            <div
+              class="b-line lg:w-[1120px] lg:h-[1px] lg:mx-auto bg-[#868686]"
+            ></div>
+            <p
+              class="lg:text-[#9A9A9A] lg:font-[estedad-regular] lg:text-[14px] lg:mt-[24px] lg:mr-[463px]"
+            >
+              تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer-mobile bg-[#343434] mt-[20px] text-white px-4 py-6 lg:hidden"
+      >
+        <!-- Contact Section -->
+        <div class="contact-section grid grid-cols-1 gap-4">
+          <!-- Phone -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/telephone.svg"
+              alt="Phone"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">
+                ارتباط با ما
+              </p>
+              <p class="text-[13px] font-[estedad-regular] mr-[10px] mt-1">
+                ۰۹۱۲-۲۱۳۲۶۵۴۵
+              </p>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/email.svg"
+              alt="Email"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">ایمیل</p>
+              <p class="text-[13px] font-[estedad-regular] mr-[10px] mt-1">
+                autorent@info.com
+              </p>
+            </div>
+          </div>
+          <!-- Address -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/map.svg"
+              alt="Address"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">آدرس</p>
+              <p class="text-[13px] font-[estedad-regular] mt-1 mr-[10px]">
+                تهران- خ شادمان
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section mt-6">
+          <p class="text-[14px] font-[estedad-semibold]">خبرنامه</p>
+          <div
+            class="flex items-center mt-2 border border-[#AEAEAE] rounded-[8px]"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل خود را وارد کنید"
+              class="flex-grow px-3 py-2 text-[12px] font-[estedad-regular] bg-transparent text-[#AEAEAE] focus:outline-none"
+            />
+            <button
+              class="bg-[#FCB910] text-black px-4 py-2 rounded-[8px] text-[12px] font-[estedad-semibold]"
+            >
+              ارسال
+            </button>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-6 border-t border-[#868686] pt-4">
+          <p
+            class="text-[12px] font-[estedad-regular] text-center text-[#9A9A9A]"
+          >
+            تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+          </p>
+        </div>
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+  </body>
+</html>
+<script>
+  const menuButton = document.getElementById("menuButton");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenu = document.getElementById("closeMenu");
+
+  menuButton.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 9,
+    spaceBetween: 56,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>

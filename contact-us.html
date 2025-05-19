@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-us</title>
+    <link href="./src/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#f3f3f3]">
+    <!-- #region wraper-->
+    <div class="wraper box-border w-full h-full">
+      <!-- #region header-->
+      <div class="all-header lg:block hidden w-full lg:h-[683px]">
+        <div
+          class="slogan lg:w-full lg:relative lg:h-full lg:bg-no-repeat lg:bg-cover lg:bg-[url(/src/image/about/bg-about.jpg)]"
+        >
+          <div
+            class="slogan-menu lg:flex lg:justify-between lg:p-[32px] lg:items-center lg:w-[1224px] lg:h-[96px] lg:rounded-bl-[16px] lg:rounded-br-[16px] lg:bg-[#ffffff] lg:mx-auto"
+          >
+            <div class="slogan-menu-logo lg:w-[151px] lg:h-[59px]">
+              <a href="./index.html">
+                <img src="./src/image/Logo.png" alt=""
+              /></a>
+            </div>
+
+            <div class="slogan-menu-menu lg:w-[507px] lg:h-[28px]">
+              <div
+                class="nav lg:w-[full] lg:h-[28px] lg:flex lg:justify-between"
+              >
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px] lg:leading-none"
+                    href="#"
+                    >رزرو خودرو</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a class="lg:w-full lg:h-full lg:text-[15px]" href="#"
+                    >خدمات ما</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px]"
+                    href="./magazine.html"
+                    >بلاگ</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px]"
+                    href="./about.html"
+                    >درباره ما</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px]"
+                    href="contact-us.html"
+                    >تماس با ما</a
+                  >
+                </div>
+                <div class="lg:nav-item-search-logo">
+                  <img src="./src/image/search.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="slogan-menu-register lg:flex lg:w-[122px] lg:h-[50px] lg:justify-center lg:items-center lg:rounded-[8px] lg:bg-[#194BF0]"
+            >
+              <a
+                href="#"
+                class="slogan-menu-register-text lg:font-[estedad-medium] lg:text-[#ffffff] lg:text-base lg:text-[14px]"
+              >
+                ورود/ثبت نام
+              </a>
+            </div>
+          </div>
+
+          <!-- slogan-center -->
+          <div
+            class="about-slogan-center-first hidden lg:mx-auto lg:mt-[350px] lg:flex lg:justify-center lg:items-center lg:w-[249px] lg:h-[45px]"
+          >
+            <h3 class="lg:text-[#FDB713] lg:font-[estedad-bold] lg:text-[32px]">
+              تماس با ما
+            </h3>
+          </div>
+          <div
+            class="about-slogan-center-second hidden lg:mt-[10px] lg:mx-auto lg:w-[105px] lg:h-[25px] lg:flex lg:justify-center lg:items-center"
+          >
+            <p
+              class="lg:text-[#FFFFFF] lg:text-[11px] lg:font-[estedad-regular]"
+            >
+              اتورنت
+            </p>
+            <img src="./src/image/arrow-left-3.svg" alt="" />
+
+            <p
+              class="lg:text-[#FFFFFF] lg:text-[11px] lg:font-[estedad-regular]"
+            >
+              تماس با ما
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Header -->
+      <div class="all-header w-full h-auto bg-white shadow-md lg:hidden">
+        <div
+          class="slogan relative h-auto bg-[url(/src/image/img-1.png)] bg-cover bg-center"
+        >
+          <div
+            class="slogan-menu flex justify-between items-center p-4 bg-white shadow-md"
+          >
+            <!-- Logo -->
+            <div class="slogan-menu-logo w-[120px] h-[40px]">
+              <a href="./index.html">
+                <img src="./src/image/Logo.png" alt=""
+              /></a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div>
+              <button id="menuButton" class="flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobileMenu"
+            class="hidden fixed top-0 right-0 w-64 h-full bg-white shadow-lg z-50"
+          >
+            <div class="p-4">
+              <button id="closeMenu" class="text-gray-800 text-xl font-bold">
+                ×
+              </button>
+              <nav class="mt-4 space-y-4">
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >رزرو خودرو</a
+                >
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >خدمات ما</a
+                >
+                <a
+                  href="./magazine.html"
+                  class="block text-gray-800 font-[estedad-medium]"
+                  >بلاگ</a
+                >
+                <a
+                  href="./about.html"
+                  class="block text-gray-800 font-[estedad-medium]"
+                  >درباره ما</a
+                >
+                <a
+                  href="./contact-us.html"
+                  class="block text-gray-800 font-[estedad-medium]"
+                  >تماس با ما</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="about-slogan-center-mobile w-full h-auto bg-[#FDB713] p-4 lg:hidden"
+      >
+        <!-- Title Section -->
+        <div class="text-center">
+          <h3 class="text-[#FFFFFF] font-[estedad-bold] text-[24px]">
+            تماس با ما
+          </h3>
+        </div>
+
+        <!-- Breadcrumb Section -->
+        <div
+          class="flex justify-center items-center mt-4 space-x-2 rtl:space-x-reverse"
+        >
+          <p class="text-[#FFFFFF] text-[13px] font-[estedad-regular]">
+            اتورنت
+          </p>
+          <img src="./src/image/arrow-left-3.svg" alt="Arrow" class="w-4 h-4" />
+          <p class="text-[#FFFFFF] text-[13px] font-[estedad-regular]">
+            تماس با ما
+          </p>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region location-->
+      <div
+        class="location hidden lg:w-[1224px] lg:h-[394px] lg:bg-[#FFFFFF] lg:border-[1px] lg:border-[#EDEDED] lg:rounded-[16px] lg:mx-auto lg:mt-[56px] lg:flex lg:items-center"
+      >
+        <div class="location-right lg:w-[556px] lg:h-[266px] lg:mr-[25px]">
+          <div class="location-right-titr lg:w-full lg:h-[58px]">
+            <h4
+              class="lg:font-[estedad-regular] lg:text-[24px] lg:text-[#494949]"
+            >
+              ارتباط با دفتر مرکزی اتورنت
+            </h4>
+            <div
+              class="lg:w-[365px] lg:h-[1px] lg:bg-[#C2C2C2] lg:mt-[21px]"
+            ></div>
+          </div>
+          <div class="location-right-item lg:w-full lg:h-[168px] lg:mt-[40px]">
+            <div
+              class="location-right-item-adress lg:w-full lg:h-[36px] lg:flex lg:items-center lg:justify-between"
+            >
+              <div class="loc-img lg:w-[24px] lg:h-[24px]">
+                <img src="./src/image/contact-us/location.svg" alt="" />
+              </div>
+              <div
+                class="loc-adress lg:font-[estedad-regular] lg:text-[#494949] lg:text-[20px]"
+              >
+                <p>آدرس :</p>
+              </div>
+              <div
+                class="adress lg:font-[estedad-regular] lg:text-[#9A9A9A] lg:text-[20px]"
+              >
+                <p>تهران، میدان آزادی، خیابان آزادی، خیابان شادمان، پلاک 23</p>
+              </div>
+            </div>
+            <div
+              class="location-right-item-phone lg:w-[268px] lg:h-[36px] lg:mt-[33px] lg:flex lg:items-center lg:justify-between"
+            >
+              <div class="loc-img lg:w-[24px] lg:h-[24px]">
+                <img src="./src/image/contact-us/location.svg" alt="" />
+              </div>
+              <div
+                class="loc-adress lg:font-[estedad-regular] lg:text-[#494949] lg:text-[20px]"
+              >
+                <p>شماره تماس:</p>
+              </div>
+              <div
+                class="adress lg:font-[estedad-regular] lg:text-[#9A9A9A] lg:text-[20px]"
+              >
+                <p>۰۲۱۶۶۵۵۲۵۸۹</p>
+              </div>
+            </div>
+            <div
+              class="location-right-item-email lg:w-[249px] lg:h-[36px] lg:mt-[33px] lg:flex lg:items-center lg:justify-between"
+            >
+              <div class="loc-img lg:w-[24px] lg:h-[24px]">
+                <img src="./src/image/email.svg" alt="" />
+              </div>
+              <div
+                class="loc-adress lg:font-[estedad-regular] lg:text-[#494949] lg:text-[20px]"
+              >
+                <p>ایمیل:</p>
+              </div>
+              <div
+                class="adress lg:font-[estedad-regular] lg:text-[#9A9A9A] lg:text-[20px]"
+              >
+                <p>info@AutoRent.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="location-left lg:w-[330px] lg:h-[330px] lg:mr-[281px] lg:rounded-[4px] lg:border-[1px] lg:border-[#CBCBCB]"
+        >
+          <img src="./src/image/contact-us/img-1.png" alt="" />
+        </div>
+      </div>
+
+      <div
+        class="block lg:hidden w-full bg-white rounded-[12px] shadow p-4 mt-6"
+      >
+        <div class="mb-4 flex items-center">
+          <img
+            src="./src/image/contact-us/location.svg"
+            alt=""
+            class="w-6 h-6 ml-2"
+          />
+          <span class="text-[#494949] text-[16px] font-[estedad-medium] ml-2"
+            >آدرس:</span
+          >
+          <span class="text-[#9A9A9A] text-[15px] font-[estedad-regular]"
+            >تهران، میدان آزادی، خیابان آزادی، خیابان شادمان، پلاک 23</span
+          >
+        </div>
+        <div class="mb-4 flex items-center">
+          <img src="./src/image/telephone.svg" alt="" class="w-6 h-6 ml-2" />
+          <span class="text-[#494949] text-[16px] font-[estedad-medium] ml-2"
+            >شماره تماس:</span
+          >
+          <span class="text-[#9A9A9A] text-[15px] font-[estedad-regular]"
+            >۰۲۱۶۶۵۵۲۵۸۹</span
+          >
+        </div>
+        <div class="flex items-center">
+          <img src="./src/image/email.svg" alt="" class="w-6 h-6 ml-2" />
+          <span class="text-[#494949] text-[16px] font-[estedad-medium] ml-2"
+            >ایمیل:</span
+          >
+          <span class="text-[#9A9A9A] text-[15px] font-[estedad-regular]"
+            >info@AutoRent.com</span
+          >
+        </div>
+      </div>
+
+      <!-- #endregion -->
+      <!-- #region send-text-->
+      <div
+        class="send-text hidden lg:block lg:w-[1224px] lg:h-[431px] lg:bg-[#FFFFFF] lg:border-[1px] lg:border-[#EDEDED] lg:mx-auto lg:mt-[56px] lg:rounded-[16px]"
+      >
+        <div
+          class="send-text-titr lg:w-[365px] lg:h-[58px] lg:mt-[32px] lg:mr-[33px]"
+        >
+          <h4
+            class="lg:font-[estedad-regular] lg:text-[24px] lg:text-[#494949]"
+          >
+            ارسال پیام شما به مجموعه اتورنت
+          </h4>
+          <div
+            class="lg:w-[365px] lg:h-[1px] lg:bg-[#C2C2C2] lg:mt-[21px]"
+          ></div>
+        </div>
+        <div
+          class="send-text-form lg:w-[1155px] lg:h-[272px] lg:flex lg:items-center lg:mx-auto"
+        >
+          <div class="send-text-form-right lg:w-[533px] lg:h-[184px]">
+            <form
+              class="lg:w-full lg:h-full lg:flex lg:flex-col lg:justify-between"
+            >
+              <div class="mb-3">
+                <label
+                  class="lg:block lg:text-[#AEAEAE] lg:text-[15px] lg:font-[estedad-medium] lg:mb-1"
+                >
+                  نام و نام خانوادگی
+                </label>
+                <input
+                  name="fullname"
+                  type="text"
+                  placeholder="نام و نام خانوادگی خود را وارد کنید"
+                  class="lg:w-full lg:border-[2px] lg:border-[#E0E0E0] lg:rounded-[8px] lg:px-3 lg:py-2 lg:text-[14px] lg:font-[estedad-regular] lg:text-[#AEAEAE] lg:focus:outline-none"
+                />
+              </div>
+              <div class="lg:mb-3">
+                <label
+                  class="lg:block lg:text-[#AEAEAE] lg:text-[15px] lg:font-[estedad-regular] lg:mb-1"
+                  for="email-desktop"
+                >
+                  ایمیل
+                </label>
+                <input
+                  id="email-desktop"
+                  name="email"
+                  type="email"
+                  placeholder="ایمیل خود را وارد کنید"
+                  class="lg:w-full lg:border-[2px] lg:border-[#E0E0E0] lg:rounded-[8px] lg:px-3 lg:py-2 lg:text-[14px] lg:font-[estedad-regular] lg:text-[#AEAEAE] lg:focus:outline-none"
+                />
+              </div>
+              <div>
+                <label
+                  class="lg:block lg:text-[#AEAEAE] lg:text-[15px] lg:font-[estedad-medium] lg:mb-1"
+                >
+                  شماره تماس
+                </label>
+                <input
+                  id="phone-desktop"
+                  name="phone"
+                  type="tel"
+                  class="lg:w-full lg:border-[2px] lg:border-[#E0E0E0] lg:rounded-[8px] lg:px-3 lg:py-2 lg:text-[14px] lg:text-[#AEAEAE] lg:font-[estedad-regular] lg:focus:outline-none"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="send-text-form-left lg:w-[533px] lg:h-[200px]">
+            <div class="lg:w-full lg:max-w-md lg:mx-auto lg:p-4">
+              <div class="lg:mb-2">
+                <textarea
+                  maxlength="20"
+                  rows="4"
+                  class="lg:w-[533px] lg:p-3 lg:border-[1px] lg:border-[#AEAEAE] lg:rounded-md lg:focus:outline-none"
+                  placeholder="..."
+                ></textarea>
+              </div>
+              <button
+                class="lg:w-[533px] lg:bg-blue-600 lg:text-white lg:py-2 lg:px-4 lg:rounded-md lg:font-[estedad-regular] lg:hover:bg-blue-700 lg:transition duration-200"
+              >
+                ارسال
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="send-text-mobile block lg:hidden w-full bg-white rounded-[12px] shadow p-4 mt-6"
+      >
+        <h4 class="text-[#494949] text-[20px] font-[estedad-bold] mb-4">
+          ارسال پیام شما به مجموعه اتورنت
+        </h4>
+        <form class="flex flex-col gap-3">
+          <input
+            type="text"
+            name="fullname"
+            placeholder="نام و نام خانوادگی"
+            class="w-full border border-[#E0E0E0] rounded-[8px] px-3 py-2 text-[14px] font-[estedad-regular] text-[#494949] focus:outline-none"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="ایمیل"
+            class="w-full border border-[#E0E0E0] rounded-[8px] px-3 py-2 text-[14px] font-[estedad-regular] text-[#494949] focus:outline-none"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="شماره تماس"
+            class="w-full border border-[#E0E0E0] rounded-[8px] px-3 py-2 text-[14px] font-[estedad-regular] text-[#494949] focus:outline-none"
+          />
+          <textarea
+            rows="4"
+            name="message"
+            placeholder="متن پیام شما..."
+            class="w-full border border-[#E0E0E0] rounded-[8px] px-3 py-2 text-[14px] font-[estedad-regular] text-[#494949] focus:outline-none resize-none"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-[#194BF0] text-white rounded-[8px] py-2 font-[estedad-bold] text-[16px] mt-2"
+          >
+            ارسال
+          </button>
+        </form>
+      </div>
+
+      <!-- #endregion -->
+      <!-- #region footer -->
+      <div
+        class="footer lg:mb-[64px] lg:block hidden lg:w-[1224px] lg:h-[432px] lg:bg-[#343434] lg:mt-[80px] lg:pt-[1px] lg:mx-auto lg:rounded-[16px]"
+      >
+        <div
+          class="footer-first lg:flex lg:w-[1120px] lg:h-[101px] lg:border-[1px] lg:border-[#868686] lg:rounded-[16px] lg:mx-auto lg:mt-[41px]"
+        >
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[16px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/telephone.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                ارتباط با ما
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                ۰۹۱۲-۲۱۳۲۶۵۴۵
+              </p>
+            </div>
+          </div>
+          <div
+            class="footer-line lg:h-[32px] lg:w-[1px] lg:bg-[#868686] lg:mt-[34.5px] lg:mr-[81px]"
+          ></div>
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[81px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/email.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                ایمیل
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                autorent@info.com
+              </p>
+            </div>
+          </div>
+          <div
+            class="footer-line lg:h-[32px] lg:w-[1px] lg:bg-[#868686] lg:mt-[34.5px] lg:mr-[81px]"
+          ></div>
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[81px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/map.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                آدرس
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                تهران- خ شادمان
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-second lg:w-[1176px] lg:h-[233px] lg:mt-[16px]s lg:mx-auto"
+        >
+          <div
+            class="footer-second-top lg:mx-auto lg:w-[1115px] lg:h-[168px] lg:flex"
+          >
+            <div
+              class="footer-seconde-top-right lg:w-[572px] lg:h-[168px] lg:mr-[67px] lg:flex"
+            >
+              <div
+                class="footer-seconde-top-right-text lg:w-[407px] lg:h-[168px]"
+              >
+                <img src="./src/image/footer-logo.svg" alt="" />
+
+                <p
+                  class="lg:mt-[24px] lg:text-[13px] lg:font-[estedad-regular] lg:leading-8 lg:text-[#FFFFFF]"
+                >
+                  اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
+                  ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
+                  تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+                </p>
+              </div>
+              <div
+                class="footer-seconde-top-right-menu lg:flex lg:flex-col lg:mt-[20px] lg:mr-[32px]"
+              >
+                <p
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF]"
+                >
+                  دسترسی آسان
+                </p>
+                <a
+                  href="./FAQ.html"
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  سوالات متداول</a
+                >
+                <a
+                  href="./about.html"
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  درباره ما</a
+                >
+                <a
+                  href="./contact-us.html "
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  تماس با ما</a
+                >
+              </div>
+            </div>
+            <div
+              class="footer-second-top-left lg:w-[320px] lg:h-[80px] lg:mt-[44px] lg:mr-[56px]"
+            >
+              <p
+                class="lg:text-[16px] lg:font-[estedad-semibold] lg:text-[#FFFFFF]"
+              >
+                خبرنامه
+              </p>
+              <div
+                class="email-inpute lg:w-[320px] lg:h-[40px] lg:border-[1px] lg:flex lg:items-center lg:border-[#AEAEAE] lg:rounded-[9px] lg:mt-[12px]"
+              >
+                <p
+                  class="lg:font-[estedad-regular] lg:mr-[5px] lg:text-[12px] lg:text-[#AEAEAE]"
+                >
+                  ایمیل خود را وارد کنید
+                </p>
+                <div
+                  class="send lg:w-[85px] lg:h-[35px] lg:bg-[#FCB910] lg:mr-[120px] lg:rounded-[8px] lg:flex lg:justify-center lg:items-center"
+                >
+                  <p class="lg:font-[estedad-semibold]">ارسال</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer-second-bottom lg:w-[1176px] lg:h-[49px] lg:mt-[50px]"
+          >
+            <div
+              class="b-line lg:w-[1120px] lg:h-[1px] lg:mx-auto bg-[#868686]"
+            ></div>
+            <p
+              class="lg:text-[#9A9A9A] lg:font-[estedad-regular] lg:text-[14px] lg:mt-[24px] lg:mr-[463px]"
+            >
+              تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-mobile bg-[#343434] text-white px-4 py-6 lg:hidden">
+        <!-- Contact Section -->
+        <div class="contact-section grid grid-cols-1 gap-4">
+          <!-- Phone -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/telephone.svg"
+              alt="Phone"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">
+                ارتباط با ما
+              </p>
+              <p class="text-[13px] font-[estedad-regular] mr-[10px] mt-1">
+                ۰۹۱۲-۲۱۳۲۶۵۴۵
+              </p>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/email.svg"
+              alt="Email"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">ایمیل</p>
+              <p class="text-[13px] font-[estedad-regular] mr-[10px] mt-1">
+                autorent@info.com
+              </p>
+            </div>
+          </div>
+          <!-- Address -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/map.svg"
+              alt="Address"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">آدرس</p>
+              <p class="text-[13px] font-[estedad-regular] mt-1 mr-[10px]">
+                تهران- خ شادمان
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section mt-6">
+          <p class="text-[14px] font-[estedad-semibold]">خبرنامه</p>
+          <div
+            class="flex items-center mt-2 border border-[#AEAEAE] rounded-[8px]"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل خود را وارد کنید"
+              class="flex-grow px-3 py-2 text-[12px] font-[estedad-regular] bg-transparent text-[#AEAEAE] focus:outline-none"
+            />
+            <button
+              class="bg-[#FCB910] text-black px-4 py-2 rounded-[8px] text-[12px] font-[estedad-semibold]"
+            >
+              ارسال
+            </button>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-6 border-t border-[#868686] pt-4">
+          <p
+            class="text-[12px] font-[estedad-regular] text-center text-[#9A9A9A]"
+          >
+            تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+          </p>
+        </div>
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+  </body>
+</html>
+<script>
+  const menuButton = document.getElementById("menuButton");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenu = document.getElementById("closeMenu");
+
+  menuButton.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+</script>

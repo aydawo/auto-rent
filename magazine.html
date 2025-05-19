@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>magazine</title>
+    <link href="./src/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#f3f3f3]">
+    <!-- #region  wraper-->
+    <div class="wraper box-border w-full h-full">
+      <!-- #region header-->
+      <div class="all-header lg:block hidden w-full lg:h-[683px]">
+        <div
+          class="slogan lg:w-full lg:relative lg:h-full lg:bg-no-repeat lg:bg-cover lg:bg-[url(/src/image/about/bg-about.jpg)]"
+        >
+          <div
+            class="slogan-menu lg:flex lg:justify-between lg:p-[32px] lg:items-center lg:w-[1224px] lg:h-[96px] lg:rounded-bl-[16px] lg:rounded-br-[16px] lg:bg-[#ffffff] lg:mx-auto"
+          >
+            <div class="slogan-menu-logo lg:w-[151px] lg:h-[59px]">
+              <a href="./index.html">
+                <img src="./src/image/Logo.png" alt=""
+              /></a>
+            </div>
+
+            <div class="slogan-menu-menu lg:w-[507px] lg:h-[28px]">
+              <div
+                class="nav lg:w-[full] lg:h-[28px] lg:flex lg:justify-between"
+              >
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px] lg:leading-none"
+                    href="#"
+                    >رزرو خودرو</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a class="lg:w-full lg:h-full lg:text-[15px]" href="#"
+                    >خدمات ما</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px]"
+                    href="./magazine.html"
+                    >بلاگ</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a
+                    class="lg:w-full lg:h-full lg:text-[15px]"
+                    href="./about.html"
+                    >درباره ما</a
+                  >
+                </div>
+                <div
+                  class="nav-item lg:w-[66px] lg:h-[28px] lg:font-[estedad-medium] lg:text-[#353535] lg:text-base"
+                >
+                  <a class="lg:w-full lg:h-full lg:text-[15px]" href="#"
+                    >تماس با ما</a
+                  >
+                </div>
+                <div class="lg:nav-item-search-logo">
+                  <img src="./src/image/search.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="slogan-menu-register lg:flex lg:w-[122px] lg:h-[50px] lg:justify-center lg:items-center lg:rounded-[8px] lg:bg-[#194BF0]"
+            >
+              <a
+                href="#"
+                class="slogan-menu-register-text lg:font-[estedad-medium] lg:text-[#ffffff] lg:text-base lg:text-[14px]"
+              >
+                ورود/ثبت نام
+              </a>
+            </div>
+          </div>
+
+          <!-- slogan-center -->
+          <div
+            class="about-slogan-center-first hidden lg:mx-auto lg:mt-[350px] lg:flex lg:justify-center lg:items-center lg:w-[249px] lg:h-[45px]"
+          >
+            <h3 class="lg:text-[#FDB713] lg:font-[estedad-bold] lg:text-[32px]">
+              مقالات
+            </h3>
+          </div>
+          <div
+            class="about-slogan-center-second hidden lg:mt-[10px] lg:mx-auto lg:w-[105px] lg:h-[25px] lg:flex lg:justify-center lg:items-center"
+          >
+            <p
+              class="lg:text-[#FFFFFF] lg:text-[13px] lg:font-[estedad-regular]"
+            >
+              اتورنت
+            </p>
+            <img src="./src/image/arrow-left-3.svg" alt="" />
+
+            <p
+              class="lg:text-[#FFFFFF] lg:text-[13px] lg:font-[estedad-regular]"
+            >
+              مقالات
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Header -->
+      <div class="all-header w-full h-auto bg-white shadow-md lg:hidden">
+        <div
+          class="slogan relative h-auto bg-[url(/src/image/img-1.png)] bg-cover bg-center"
+        >
+          <div
+            class="slogan-menu flex justify-between items-center p-4 bg-white shadow-md"
+          >
+            <!-- Logo -->
+            <div class="slogan-menu-logo w-[120px] h-[40px]">
+              <a href="./index.html">
+                <img src="./src/image/Logo.png" alt=""
+              /></a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div>
+              <button id="menuButton" class="flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobileMenu"
+            class="hidden fixed top-0 right-0 w-64 h-full bg-white shadow-lg z-50"
+          >
+            <div class="p-4">
+              <button id="closeMenu" class="text-gray-800 text-xl font-bold">
+                ×
+              </button>
+              <nav class="mt-4 space-y-4">
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >رزرو خودرو</a
+                >
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >خدمات ما</a
+                >
+                <a
+                  href="./magazine.html"
+                  class="block text-gray-800 font-[estedad-medium]"
+                  >بلاگ</a
+                >
+                <a
+                  href="./about.html"
+                  class="block text-gray-800 font-[estedad-medium]"
+                  >درباره ما</a
+                >
+                <a href="#" class="block text-gray-800 font-[estedad-medium]"
+                  >تماس با ما</a
+                >
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="about-slogan-center-mobile w-full h-auto bg-[#FDB713] p-4 lg:hidden"
+      >
+        <!-- Title Section -->
+        <div class="text-center">
+          <h3 class="text-[#FFFFFF] font-[estedad-bold] text-[24px]">مقالات</h3>
+        </div>
+
+        <!-- Breadcrumb Section -->
+        <div
+          class="flex justify-center items-center mt-4 space-x-2 rtl:space-x-reverse"
+        >
+          <p class="text-[#FFFFFF] text-[13px] font-[estedad-regular]">
+            اتورنت
+          </p>
+          <img src="./src/image/arrow-left-3.svg" alt="Arrow" class="w-4 h-4" />
+          <p class="text-[#FFFFFF] text-[13px] font-[estedad-regular]">
+            مقالات
+          </p>
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region blog-data -->
+      <div
+        class="blog-data lg:block hidden lg:mr-[108px] lg:w-[897px] lg:h-[370px] lg:mt-[56px]"
+      >
+        <div
+          class="magazine-item lg:w-[1221px] lg:mt-[16px] lg:h-[370px] lg:flex gap-[25px] lg:items-center lg:mx-auto"
+        >
+          <div
+            class="magazine-cart lg:w-[391px] lg:h-[370px] lg:rounded-[16px] lg:border-[1px] lg:border-[#D7D7D7] lg:bg-[#FFFFFF]"
+          >
+            <div
+              class="magazine-cart-item lg:w-[359px] lg:h-[338px] lg:mx-auto lg:mt-[16px]"
+            >
+              <img
+                class="lg:w-[359px] lg:h-[195px] lg:rounded-[12px]"
+                src="./src/image/blog/image-3.jpg"
+                alt=""
+              />
+              <div
+                class="magazine-cart-item-text lg:mt-[16px] lg:w-[359px] lg:h-[127px]"
+              >
+                <div class="lg:w-[351px] lg:h-[86px]">
+                  <p
+                    class="lg:text-[#414141] lg:text-[16px] lg:font-[estedad-medium]"
+                  >
+                    روش های مختلف برای اجاره خودرو
+                  </p>
+                  <p
+                    class="lg:text-[#757575] lg:text-[12px] lg:font-[estedad-regular] lg:mt-[16px] lg:leading-5"
+                  >
+                     امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی
+                    جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها
+                    نیز دچار تحولاتی شده .
+                  </p>
+                </div>
+                <div class="lg:w-[351px] lg:h-[25px] lg:mt-[16px]">
+                  <img src="./src/image/content.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="magazine-cart lg:w-[391px] lg:h-[370px] lg:rounded-[16px] lg:border-[1px] lg:border-[#D7D7D7] lg:bg-[#FFFFFF]"
+          >
+            <div
+              class="magazine-cart-item lg:w-[359px] lg:h-[338px] lg:mx-auto lg:mt-[16px]"
+            >
+              <img
+                class="lg:w-[359px] lg:h-[195px] lg:rounded-[12px]"
+                src="./src/image/magazine/geep-y.jpg"
+                alt=""
+              />
+              <div
+                class="magazine-cart-item-text lg:mt-[16px] lg:w-[359px] lg:h-[127px]"
+              >
+                <div class="lg:w-[351px] lg:h-[86px]">
+                  <p
+                    class="lg:text-[#414141] lg:text-[16px] lg:font-[estedad-medium]"
+                  >
+                    روش های مختلف برای اجاره خودرو
+                  </p>
+                  <p
+                    class="lg:text-[#757575] lg:text-[12px] lg:font-[estedad-regular] lg:mt-[16px] lg:leading-5"
+                  >
+                     امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی
+                    جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها
+                    نیز دچار تحولاتی شده .
+                  </p>
+                </div>
+                <div class="lg:w-[351px] lg:h-[25px] lg:mt-[16px]">
+                  <img src="./src/image/content.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="blog-data hidden lg:block lg:mr-[108px] lg:w-[897px] lg:h-[370px] lg:mt-[16px]"
+      >
+        <div
+          class="magazine-item lg:w-[1221px] lg:mt-[16px] lg:h-[370px] lg:flex gap-[25px] lg:items-center lg:mx-auto"
+        >
+          <div
+            class="magazine-cart lg:w-[391px] lg:h-[370px] lg:rounded-[16px] lg:border-[1px] lg:border-[#D7D7D7] lg:bg-[#FFFFFF]"
+          >
+            <div
+              class="magazine-cart-item lg:w-[359px] lg:h-[338px] lg:mx-auto lg:mt-[16px]"
+            >
+              <img
+                class="lg:w-[359px] lg:h-[195px] lg:rounded-[12px]"
+                src="./src/image/magazine/shevorlot.jpg"
+                alt=""
+              />
+              <div
+                class="magazine-cart-item-text lg:mt-[16px] lg:w-[359px] lg:h-[127px]"
+              >
+                <div class="lg:w-[351px] lg:h-[86px]">
+                  <p
+                    class="lg:text-[#414141] lg:text-[16px] lg:font-[estedad-medium]"
+                  >
+                    روش های مختلف برای اجاره خودرو
+                  </p>
+                  <p
+                    class="lg:text-[#757575] lg:text-[12px] lg:font-[estedad-regular] lg:mt-[16px] lg:leading-5"
+                  >
+                     امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی
+                    جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها
+                    نیز دچار تحولاتی شده .
+                  </p>
+                </div>
+                <div class="lg:w-[351px] lg:h-[25px] lg:mt-[16px]">
+                  <img src="./src/image/content.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="magazine-cart lg:w-[391px] lg:h-[370px] lg:rounded-[16px] lg:border-[1px] lg:border-[#D7D7D7] lg:bg-[#FFFFFF]"
+          >
+            <div
+              class="magazine-cart-item lg:w-[359px] lg:h-[338px] lg:mx-auto lg:mt-[16px]"
+            >
+              <img
+                class="lg:w-[359px] lg:h-[195px] lg:rounded-[12px]"
+                src="./src/image/magazine/image-1.jpg"
+                alt=""
+              />
+              <div
+                class="magazine-cart-item-text lg:mt-[16px] lg:w-[359px] lg:h-[127px]"
+              >
+                <div class="lg:w-[351px] lg:h-[86px]">
+                  <p
+                    class="lg:text-[#414141] lg:text-[16px] lg:font-[estedad-medium]"
+                  >
+                    روش های مختلف برای اجاره خودرو
+                  </p>
+                  <p
+                    class="lg:text-[#757575] lg:text-[12px] lg:font-[estedad-regular] lg:mt-[16px] lg:leading-5"
+                  >
+                     امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی
+                    جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها
+                    نیز دچار تحولاتی شده .
+                  </p>
+                </div>
+                <div class="lg:w-[351px] lg:h-[25px] lg:mt-[16px]">
+                  <img src="./src/image/content.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="blog-data hidden lg:block lg:mr-[108px] lg:w-[897px] lg:h-[370px] lg:mt-[16px]"
+      >
+        <div
+          class="magazine-item lg:w-[1221px] lg:mt-[16px] lg:h-[370px] lg:flex gap-[25px] lg:items-center lg:mx-auto"
+        >
+          <div
+            class="magazine-cart lg:w-[391px] lg:h-[370px] lg:rounded-[16px] lg:border-[1px] lg:border-[#D7D7D7] lg:bg-[#FFFFFF]"
+          >
+            <div
+              class="magazine-cart-item lg:w-[359px] lg:h-[338px] lg:mx-auto lg:mt-[16px]"
+            >
+              <img
+                class="lg:w-[359px] lg:h-[195px] lg:rounded-[12px]"
+                src="./src/image/blog/image-1.jpg"
+                alt=""
+              />
+              <div
+                class="magazine-cart-item-text lg:mt-[16px] lg:w-[359px] lg:h-[127px]"
+              >
+                <div class="lg:w-[351px] lg:h-[86px]">
+                  <p
+                    class="lg:text-[#414141] lg:text-[16px] lg:font-[estedad-medium]"
+                  >
+                    روش های مختلف برای اجاره خودرو
+                  </p>
+                  <p
+                    class="lg:text-[#757575] lg:text-[12px] lg:font-[estedad-regular] lg:mt-[16px] lg:leading-5"
+                  >
+                     امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی
+                    جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها
+                    نیز دچار تحولاتی شده .
+                  </p>
+                </div>
+                <div class="lg:w-[351px] lg:h-[25px] lg:mt-[16px]">
+                  <img src="./src/image/content.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="magazine-cart lg:w-[391px] lg:h-[370px] lg:rounded-[16px] lg:border-[1px] lg:border-[#D7D7D7] lg:bg-[#FFFFFF]"
+          >
+            <div
+              class="magazine-cart-item lg:w-[359px] lg:h-[338px] lg:mx-auto lg:mt-[16px]"
+            >
+              <img
+                class="lg:w-[359px] lg:h-[195px] lg:rounded-[12px]"
+                src="./src/image/blog/image-2.jpg"
+                alt=""
+              />
+              <div
+                class="magazine-cart-item-text lg:mt-[16px] lg:w-[359px] lg:h-[127px]"
+              >
+                <div class="lg:w-[351px] lg:h-[86px]">
+                  <p
+                    class="lg:text-[#414141] lg:text-[16px] lg:font-[estedad-medium]"
+                  >
+                    روش های مختلف برای اجاره خودرو
+                  </p>
+                  <p
+                    class="lg:text-[#757575] lg:text-[12px] lg:font-[estedad-regular] lg:mt-[16px] lg:leading-5"
+                  >
+                     امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی
+                    جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها
+                    نیز دچار تحولاتی شده .
+                  </p>
+                </div>
+                <div class="lg:w-[351px] lg:h-[25px] lg:mt-[16px]">
+                  <img src="./src/image/content.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- نسخه موبایل blog-data -->
+      <div class="blog-data-mobile w-full p-4 lg:hidden">
+        <div class="space-y-6">
+          <div
+            class="bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-[16px]"
+              src="./src/image/blog/image-3.jpg"
+              alt="مقاله ۱"
+            />
+            <div class="p-4">
+              <p class="text-[#414141] text-[15px] font-[estedad-medium]">
+                روش های مختلف برای اجاره خودرو
+              </p>
+              <p
+                class="text-[#757575] text-[12px] font-[estedad-regular] mt-2 leading-5"
+              >
+                امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+                وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+                تحولاتی شده .
+              </p>
+              <div class="mt-4">
+                <img src="./src/image/content.png" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-[16px]"
+              src="./src/image/magazine/geep-y.jpg"
+              alt="مقاله ۲"
+            />
+            <div class="p-4">
+              <p class="text-[#414141] text-[15px] font-[estedad-medium]">
+                روش های مختلف برای اجاره خودرو
+              </p>
+              <p
+                class="text-[#757575] text-[12px] font-[estedad-regular] mt-2 leading-5"
+              >
+                امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+                وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+                تحولاتی شده .
+              </p>
+              <div class="mt-4">
+                <img src="./src/image/content.png" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-[16px]"
+              src="./src/image/magazine/shevorlot.jpg"
+              alt="مقاله ۳"
+            />
+            <div class="p-4">
+              <p class="text-[#414141] text-[15px] font-[estedad-medium]">
+                روش های مختلف برای اجاره خودرو
+              </p>
+              <p
+                class="text-[#757575] text-[12px] font-[estedad-regular] mt-2 leading-5"
+              >
+                امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+                وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+                تحولاتی شده .
+              </p>
+              <div class="mt-4">
+                <img src="./src/image/content.png" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-[16px]"
+              src="./src/image/magazine/image-1.jpg"
+              alt="مقاله ۴"
+            />
+            <div class="p-4">
+              <p class="text-[#414141] text-[15px] font-[estedad-medium]">
+                روش های مختلف برای اجاره خودرو
+              </p>
+              <p
+                class="text-[#757575] text-[12px] font-[estedad-regular] mt-2 leading-5"
+              >
+                امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+                وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+                تحولاتی شده .
+              </p>
+              <div class="mt-4">
+                <img src="./src/image/content.png" alt="..." />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-[16px]"
+              src="./src/image/blog/image-1.jpg"
+              alt="مقاله ۵"
+            />
+            <div class="p-4">
+              <p class="text-[#414141] text-[15px] font-[estedad-medium]">
+                روش های مختلف برای اجاره خودرو
+              </p>
+              <p
+                class="text-[#757575] text-[12px] font-[estedad-regular] mt-2 leading-5"
+              >
+                امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+                وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+                تحولاتی شده .
+              </p>
+              <div class="mt-4">
+                <img src="./src/image/content.png" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-[16px] border border-[#D7D7D7] overflow-hidden"
+          >
+            <img
+              class="w-full h-40 object-cover rounded-t-[16px]"
+              src="./src/image/blog/image-2.jpg"
+              alt="مقاله ۶"
+            />
+            <div class="p-4">
+              <p class="text-[#414141] text-[15px] font-[estedad-medium]">
+                روش های مختلف برای اجاره خودرو
+              </p>
+              <p
+                class="text-[#757575] text-[12px] font-[estedad-regular] mt-2 leading-5"
+              >
+                امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+                وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+                تحولاتی شده .
+              </p>
+              <div class="mt-4">
+                <img src="./src/image/content.png" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- #endregion -->
+      <!-- #region aside-->
+      <aside class="hidden lg:block">
+        <div
+          class="search lg:w-[392px] lg:absolute lg:font-[estedad-regular] lg:flex lg:items-center lg:text-[12px] lg:h-[56px] lg:top-[756px] lg:left-[250px] lg:bg-[#ffffff] lg:rounded-[14px]"
+        >
+          <input
+            class="lg:mr-[16px] lg:w-[190px]"
+            type="search"
+            placeholder="جستجو در سایت اجاره خودرو اتورنت"
+            name=""
+            id=""
+          />
+          <img
+            class="lg:w-[20px] lg:h-[20px] lg:mr-[150px]"
+            src="./src/image/search.svg"
+            alt=""
+          />
+        </div>
+        <div
+          class="sidebarr lg:w-[392px] lg:h-[568px] lg:bg-[#FFFFFF] lg:rounded-[14px] lg:absolute lg:top-[830px] lg:left-[250px]"
+        >
+          <div
+            class="sidebar-titr lg:w-[156px] lg:p-[1px] lg:h-[64px] lg:mt-[16px] lg:mr-[8px]"
+          >
+            <h4
+              class="lg:font-[estedad-bold] lg:mt-[10px] lg:text-[24px] lg:mr-[10px] lg:text-[#353535]"
+            >
+              آخرین مقالات
+            </h4>
+            <div
+              class="lg:w-[60px] lg:h-[4px] lg:mr-[12px] lg:mt-[10px] lg:bg-[#D79C10]"
+            ></div>
+          </div>
+          <div
+            class="sidebar-b-data lg:w-[372px] lg:h-[456px] lg:mt-[15px] lg:mr-[8px]"
+          >
+            <div
+              class="sidebar-b-data-item lg:w-[372px] lg:h-[105px] lg:border-b-[1px] lg:border-b-[#C2C2C2] lg:flex lg:justify-between lg:items-center"
+            >
+              <img
+                class="lg:w-[82px] lg:h-[83px] lg:mr-[8px] lg:rounded-[8px]"
+                src="./src/image/magazine/image-2.jpg"
+                alt=""
+              />
+              <div class="lg:w-[260px] lg:h-[65px] lg:ml-[8px]">
+                <p
+                  class="lg:font-[estedad-medium] lg:text-[16px] lg:text-[#494949]"
+                >
+                  نگاهی به Lexus NX
+                </p>
+                <img
+                  class="lg:mt-[18px]"
+                  src="./src/image/content.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="sidebar-b-data-item lg:w-[372px] lg:h-[105px] lg:border-b-[1px] lg:border-b-[#C2C2C2] lg:flex lg:justify-between lg:items-center"
+            >
+              <img
+                class="lg:w-[82px] lg:h-[83px] lg:mr-[8px] lg:rounded-[8px]"
+                src="./src/image/magazine/image-3.jpg"
+                alt=""
+              />
+              <div class="lg:w-[260px] lg:h-[65px] lg:ml-[8px]">
+                <p
+                  class="lg:font-[estedad-medium] lg:text-[16px] lg:text-[#494949]"
+                >
+                  رونمایی از Lamborgini Urus
+                </p>
+                <img
+                  class="lg:mt-[18px]"
+                  src="./src/image/content.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="sidebar-b-data-item lg:w-[372px] lg:h-[105px] lg:border-b-[1px] lg:border-b-[#C2C2C2] lg:flex lg:justify-between lg:items-center"
+            >
+              <img
+                class="lg:w-[82px] lg:h-[83px] lg:mr-[8px] lg:rounded-[8px]"
+                src="./src/image/magazine/image-4.jpg"
+                alt=""
+              />
+              <div class="lg:w-[260px] lg:h-[65px] lg:ml-[8px]">
+                <p
+                  class="lg:font-[estedad-medium] lg:text-[15px] lg:text-[#494949]"
+                >
+                  بنتلی Bentayga زیر تیغ تیونینگ منصوری
+                </p>
+                <img
+                  class="lg:mt-[11px]"
+                  src="./src/image/content.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="sidebar-b-data-item lg:w-[372px] lg:h-[105px] lg:flex lg:justify-between lg:items-center"
+            >
+              <img
+                class="lg:w-[82px] lg:h-[83px] lg:mr-[8px] lg:rounded-[8px]"
+                src="./src/image/magazine/image-5.jpg"
+                alt=""
+              />
+              <div class="lg:w-[260px] lg:h-[65px] lg:ml-[8px]">
+                <p
+                  class="lg:font-[estedad-medium] lg:text-[16px] lg:text-[#494949]"
+                >
+                  رونمایی از فراری Roma به تاخیر افتاد
+                </p>
+                <img
+                  class="lg:mt-[18px]"
+                  src="./src/image/content.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sec-sidebar lg:w-[392px] lg:h-[130px] lg:bg-[#FFFFFF] lg:rounded-[8px] lg:absolute lg:top-[1420px] lg:left-[250px]"
+        >
+          <div class="sec-sidebar-titr lg:w-[143px] lg:h-[64px]">
+            <h4
+              class="lg:font-[estedad-bold] lg:mt-[10px] lg:text-[24px] lg:mr-[10px] lg:text-[#353535]"
+            >
+              برچسب ها
+            </h4>
+
+            <div
+              class="lg:w-[60px] lg:h-[4px] lg:mr-[12px] lg:mt-[10px] lg:bg-[#D79C10]"
+            ></div>
+          </div>
+          <div
+            class="sec-sidebar-data lg:w-[389px] lg:h-[35px] lg:mx-auto lg:mt-[8px] lg:flex lg:items-center"
+          >
+            <div
+              class="sec-sidebar-data-item lg:mr-[10px] lg:w-[86px] lg:h-[35px] lg:bg-[#F3F3F3] lg:rounded-[48px]"
+            >
+              <span
+                class="lg:font-[estedad-regular] lg:text-[12px] lg:text-[#494949] lg:mr-[16px] lg:mt-[7px]"
+              >
+                اجاره خودرو
+              </span>
+            </div>
+            <div
+              class="sec-sidebar-data-item lg:mr-[15px] lg:w-[91px] lg:h-[35px] lg:flex lg:items-center lg:justify-center lg:bg-[#F3F3F3] lg:rounded-[48px]"
+            >
+              <span
+                class="lg:font-[estedad-regular] lg:text-[12px] lg:text-[#494949]"
+              >
+                مرسدس بنز
+              </span>
+            </div>
+            <div
+              class="sec-sidebar-data-item lg:mr-[15px] lg:w-[47px] lg:h-[35px] lg:flex lg:items-center lg:justify-center lg:bg-[#F3F3F3] lg:rounded-[48px]"
+            >
+              <span
+                class="lg:font-[estedad-regular] lg:text-[12px] lg:text-[#494949]"
+              >
+                ون
+              </span>
+            </div>
+            <div
+              class="sec-sidebar-data-item lg:mr-[15px] lg:w-[88px] lg:h-[35px] lg:flex lg:items-center lg:justify-center lg:bg-[#F3F3F3] lg:rounded-[48px]"
+            >
+              <span
+                class="lg:font-[estedad-regular] lg:text-[12px] lg:text-[#494949]"
+              >
+                بدون راننده
+              </span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- نسخه موبایل aside -->
+      <aside class="aside-mobile w-full p-4 lg:hidden">
+        <div
+          class="search-mobile flex items-center bg-white rounded-[10px] px-3 py-2 mb-4 border border-[#E0E0E0]"
+        >
+          <input
+            class="flex-grow bg-transparent outline-none text-[13px] font-[estedad-regular] text-[#353535] placeholder-[#AEAEAE]"
+            type="search"
+            placeholder="جستجو در سایت اجاره خودرو اتورنت"
+          />
+          <img class="w-5 h-5 ml-2" src="./src/image/search.svg" alt="جستجو" />
+        </div>
+
+        <div class="last-articles-mobile bg-white rounded-[10px] p-4 mb-4">
+          <h4 class="font-[estedad-bold] text-[18px] text-[#353535] mb-3">
+            آخرین مقالات
+          </h4>
+          <div class="space-y-4">
+            <div class="flex items-center border-b border-[#F3F3F3] pb-3">
+              <img
+                class="w-[60px] h-[60px] rounded-[8px] ml-3"
+                src="./src/image/magazine/image-2.jpg"
+                alt=""
+              />
+              <div class="flex-1">
+                <p class="font-[estedad-medium] text-[14px] text-[#494949]">
+                  نگاهی به Lexus NX
+                </p>
+                <img class="mt-2" src="./src/image/content.png" alt="" />
+              </div>
+            </div>
+            <div class="flex items-center border-b border-[#F3F3F3] pb-3">
+              <img
+                class="w-[60px] h-[60px] rounded-[8px] ml-3"
+                src="./src/image/magazine/image-3.jpg"
+                alt=""
+              />
+              <div class="flex-1">
+                <p class="font-[estedad-medium] text-[14px] text-[#494949]">
+                  رونمایی از Lamborgini Urus
+                </p>
+                <img class="mt-2" src="./src/image/content.png" alt="" />
+              </div>
+            </div>
+
+            <div class="flex items-center border-b border-[#F3F3F3] pb-3">
+              <img
+                class="w-[60px] h-[60px] rounded-[8px] ml-3"
+                src="./src/image/magazine/image-4.jpg"
+                alt=""
+              />
+              <div class="flex-1">
+                <p class="font-[estedad-medium] text-[13px] text-[#494949]">
+                  بنتلی Bentayga زیر تیغ تیونینگ منصوری
+                </p>
+                <img class="mt-2" src="./src/image/content.png" alt="" />
+              </div>
+            </div>
+            <div class="flex items-center">
+              <img
+                class="w-[60px] h-[60px] rounded-[8px] ml-3"
+                src="./src/image/magazine/image-5.jpg"
+                alt=""
+              />
+              <div class="flex-1">
+                <p class="font-[estedad-medium] text-[14px] text-[#494949]">
+                  رونمایی از فراری Roma به تاخیر افتاد
+                </p>
+                <img class="mt-2" src="./src/image/content.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tags-mobile bg-white rounded-[10px] p-4">
+          <h4 class="font-[estedad-bold] text-[18px] text-[#353535] mb-3">
+            برچسب ها
+          </h4>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="bg-[#F3F3F3] rounded-[48px] px-4 py-1 text-[12px] font-[estedad-regular] text-[#494949]"
+              >اجاره خودرو</span
+            >
+            <span
+              class="bg-[#F3F3F3] rounded-[48px] px-4 py-1 text-[12px] font-[estedad-regular] text-[#494949]"
+              >مرسدس بنز</span
+            >
+            <span
+              class="bg-[#F3F3F3] rounded-[48px] px-4 py-1 text-[12px] font-[estedad-regular] text-[#494949]"
+              >ون</span
+            >
+            <span
+              class="bg-[#F3F3F3] rounded-[48px] px-4 py-1 text-[12px] font-[estedad-regular] text-[#494949]"
+              >بدون راننده</span
+            >
+          </div>
+        </div>
+      </aside>
+
+      <!-- #endregion -->
+      <!-- #region footer -->
+      <div
+        class="footer lg:mb-[64px] lg:block hidden lg:w-[1224px] lg:h-[432px] lg:bg-[#343434] lg:mt-[80px] lg:pt-[1px] lg:mx-auto lg:rounded-[16px]"
+      >
+        <div
+          class="footer-first lg:flex lg:w-[1120px] lg:h-[101px] lg:border-[1px] lg:border-[#868686] lg:rounded-[16px] lg:mx-auto lg:mt-[41px]"
+        >
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[16px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/telephone.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                ارتباط با ما
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                ۰۹۱۲-۲۱۳۲۶۵۴۵
+              </p>
+            </div>
+          </div>
+          <div
+            class="footer-line lg:h-[32px] lg:w-[1px] lg:bg-[#868686] lg:mt-[34.5px] lg:mr-[81px]"
+          ></div>
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[81px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/email.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                ایمیل
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                autorent@info.com
+              </p>
+            </div>
+          </div>
+          <div
+            class="footer-line lg:h-[32px] lg:w-[1px] lg:bg-[#868686] lg:mt-[34.5px] lg:mr-[81px]"
+          ></div>
+          <div
+            class="footer-first-item lg:w-[254px] lg:h-[69px] lg:mr-[81px] lg:mt-[16px] lg:flex lg:items-center"
+          >
+            <div
+              class="footer-first-item-icone lg:w-[48px] lg:h-[48px] lg:mt-[10px] lg:mr-[39px]"
+            >
+              <img src="./src/image/map.svg" alt="" />
+            </div>
+            <div
+              class="footer-first-item-text lg:w-[113px] lg:h-[69px] lg:mt-[16px] lg:mr-[16px]"
+            >
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFBFB] lg:text-[16px] lg:mx-auto"
+              >
+                آدرس
+              </p>
+              <p
+                class="lg:font-[estedad-regular] lg:text-[#FFFFFF] lg:text-[15px] lg:mx-auto lg:mt-[16px]"
+              >
+                تهران- خ شادمان
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-second lg:w-[1176px] lg:h-[233px] lg:mt-[16px]s lg:mx-auto"
+        >
+          <div
+            class="footer-second-top lg:mx-auto lg:w-[1115px] lg:h-[168px] lg:flex"
+          >
+            <div
+              class="footer-seconde-top-right lg:w-[572px] lg:h-[168px] lg:mr-[67px] lg:flex"
+            >
+              <div
+                class="footer-seconde-top-right-text lg:w-[407px] lg:h-[168px]"
+              >
+                <img src="./src/image/footer-logo.svg" alt="" />
+
+                <p
+                  class="lg:mt-[24px] lg:text-[13px] lg:font-[estedad-regular] lg:leading-8 lg:text-[#FFFFFF]"
+                >
+                  اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگترین
+                  ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر، اقتصادی تا
+                  تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+                </p>
+              </div>
+              <div
+                class="footer-seconde-top-right-menu lg:mt-[20px] lg:mr-[32px]"
+              >
+                <p
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF]"
+                >
+                  دسترسی آسان
+                </p>
+                <a
+                  href="./FAQ.html"
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  سوالات متداول</a
+                >
+                <a
+                  href="./about.html"
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  درباره ما</a
+                >
+                <a
+                  href="./contact-us.html "
+                  class="lg:font-[estedad-medium] lg:text-[14px] lg:text-[#FFFFFF] lg:mt-[16px]"
+                >
+                  تماس با ما</a
+                >s
+              </div>
+            </div>
+            <div
+              class="footer-second-top-left lg:w-[320px] lg:h-[80px] lg:mt-[44px] lg:mr-[56px]"
+            >
+              <p
+                class="lg:text-[16px] lg:font-[estedad-semibold] lg:text-[#FFFFFF]"
+              >
+                خبرنامه
+              </p>
+              <div
+                class="email-inpute lg:w-[320px] lg:h-[40px] lg:border-[1px] lg:flex lg:items-center lg:border-[#AEAEAE] lg:rounded-[9px] lg:mt-[12px]"
+              >
+                <p
+                  class="lg:font-[estedad-regular] lg:mr-[5px] lg:text-[12px] lg:text-[#AEAEAE]"
+                >
+                  ایمیل خود را وارد کنید
+                </p>
+                <div
+                  class="send lg:w-[85px] lg:h-[35px] lg:bg-[#FCB910] lg:mr-[120px] lg:rounded-[8px] lg:flex lg:justify-center lg:items-center"
+                >
+                  <p class="lg:font-[estedad-semibold]">ارسال</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer-second-bottom lg:w-[1176px] lg:h-[49px] lg:mt-[50px]"
+          >
+            <div
+              class="b-line lg:w-[1120px] lg:h-[1px] lg:mx-auto bg-[#868686]"
+            ></div>
+            <p
+              class="lg:text-[#9A9A9A] lg:font-[estedad-regular] lg:text-[14px] lg:mt-[24px] lg:mr-[463px]"
+            >
+              تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-mobile bg-[#343434] text-white px-4 py-6 lg:hidden">
+        <!-- Contact Section -->
+        <div class="contact-section grid grid-cols-1 gap-4">
+          <!-- Phone -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/telephone.svg"
+              alt="Phone"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">
+                ارتباط با ما
+              </p>
+              <p class="text-[13px] font-[estedad-regular] mr-[10px] mt-1">
+                ۰۹۱۲-۲۱۳۲۶۵۴۵
+              </p>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/email.svg"
+              alt="Email"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">ایمیل</p>
+              <p class="text-[13px] font-[estedad-regular] mr-[10px] mt-1">
+                autorent@info.com
+              </p>
+            </div>
+          </div>
+          <!-- Address -->
+          <div class="flex items-center">
+            <img
+              class="w-[24px] h-[24px] mr-4"
+              src="./src/image/map.svg"
+              alt="Address"
+            />
+            <div>
+              <p class="text-[14px] font-[estedad-regular] mr-[10px]">آدرس</p>
+              <p class="text-[13px] font-[estedad-regular] mt-1 mr-[10px]">
+                تهران- خ شادمان
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section mt-6">
+          <p class="text-[14px] font-[estedad-semibold]">خبرنامه</p>
+          <div
+            class="flex items-center mt-2 border border-[#AEAEAE] rounded-[8px]"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل خود را وارد کنید"
+              class="flex-grow px-3 py-2 text-[12px] font-[estedad-regular] bg-transparent text-[#AEAEAE] focus:outline-none"
+            />
+            <button
+              class="bg-[#FCB910] text-black px-4 py-2 rounded-[8px] text-[12px] font-[estedad-semibold]"
+            >
+              ارسال
+            </button>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-6 border-t border-[#868686] pt-4">
+          <p
+            class="text-[12px] font-[estedad-regular] text-center text-[#9A9A9A]"
+          >
+            تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+          </p>
+        </div>
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+  </body>
+</html>
+<script>
+  const menuButton = document.getElementById("menuButton");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenu = document.getElementById("closeMenu");
+
+  menuButton.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+</script>
