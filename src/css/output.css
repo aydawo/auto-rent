@@ -2952,6 +2952,11 @@
       background-image: url('src/image/about/bg-about.jpg');
     }
   }
+  .lg\:bg-\[url\(\'src\/image\/img-1\.png\'\)\] {
+    @media (width >= 64rem) {
+      background-image: url('src/image/img-1.png');
+    }
+  }
   .lg\:bg-\[url\(\'src\/image\/img-2\.png\'\)\] {
     @media (width >= 64rem) {
       background-image: url('src/image/img-2.png');
