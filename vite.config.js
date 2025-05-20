@@ -1,5 +1,12 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: '/auto-rent/',
-})
+  base: "/auto-rent/",
+});
+module.exports = {
+  content: ["./*.html", "./src/**/*.js"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
